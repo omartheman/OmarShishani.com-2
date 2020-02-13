@@ -30,7 +30,7 @@
 		z-index: 1;
 	}
 	.O {
-		border: 50px solid var(--OS-logo-color);
+		border: 50px solid red;
     border-radius: 50%;
     box-shadow: 0px 0 0 5px var(--body-background-color);
     display: inline-block;
@@ -41,6 +41,43 @@
     left: 10px;
     width: 20px;
 	}
+	.O-animation-cover {
+		border: 50px solid var(--body-background-color);
+    border-radius: 50%;
+    box-shadow: 0px 0 0 6px var(--body-background-color);
+    display: inline-block;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 10px;
+    width: 20px;
+	}
+	.O-animation-cover-2 {
+		border: 50px solid var(--body-background-color);
+    border-radius: 50%;
+    box-shadow: 0px 0 0 6px var(--body-background-color);
+    display: inline-block;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 11px;
+    width: 20px;
+  }
+	.O-animation-cover-3 {
+		border: 50px solid var(--body-background-color);
+    border-radius: 50%;
+    box-shadow: 0px 0 0 6px var(--body-background-color);
+    display: inline-block;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    	bottom: 1px;
+    	left: 11px;
+    width: 20px;
+  }
 	.S_template {
 		background-color: var(--body-background-color);
 		display: inline-block;
