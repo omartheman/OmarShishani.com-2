@@ -4,7 +4,7 @@ function runslide() {
       $('.OS-S').fadeIn(1500).fadeOut(1500, function() {
           runslide();
 	    });
-      $('.OS-O').delay(1500).fadeOut(1500).fadeIn(1500, function() {
+      $('.OS-O').delay(1500).fadeOut(1500).delay(1000).fadeIn(1500, function() {
           runslide();
 	    });
     }
