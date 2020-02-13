@@ -1,12 +1,12 @@
 :root {
-	--body-background-color: white; 
+	--body-background-color: white;
 	--OS-logo-color: #4b4545;
 }
 .body {
 	background-color: var(--body-background-color);
 }
 .h1 {
-	font-family: comfortaa;
+	font-family: Comfortaa, sans-serif;
 	text-align: center;
 }
 .welcome-text {
@@ -31,7 +31,19 @@
 		width: 220px;
 		z-index: 1;
 	}
+	@keyframes O-rainbow {
+	0% {border: 50px solid orange;}
+  8.33%  {border: 50px solid orange;}
+  25%  {border: 50px solid #f2ff00;}
+  41.66% {border: 50px solid green;}
+  58.33%   {border: 50px solid blue;}
+  75%  {border: 50px solid purple;}
+  91.66%  {border: 50px solid red;}
+  100% {border: 50px solid orange;}
+	}
 	.O {
+		animation: O-rainbow 16s infinite ;
+		animation-delay: 0;
 		border: 50px solid red;
     border-radius: 50%;
     box-shadow: 0px 0 0 5px var(--body-background-color);
