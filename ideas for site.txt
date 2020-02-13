@@ -1,0 +1,4 @@
+Feb 13 2020
+
+1. Make a day and night mode, where night mode is the dark colors and light text 
+2. Animation of O.S. Fading in an out.
