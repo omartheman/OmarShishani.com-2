@@ -16,9 +16,11 @@
 
 #OS_css {} /*This id just here for title*/
 	.OS_css_container_div {
+		height: 8em;
 		position: absolute;
 			left: calc(50vw - 10em);
 			top: 10em;
+		width: 10em;
 		z-index: 1;
 	}
 	.OS_css_container_subtitle {
