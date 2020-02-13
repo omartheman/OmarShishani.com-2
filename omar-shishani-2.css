@@ -42,7 +42,7 @@
   100% {border: 50px solid orange;}
 	}
 	.O {
-		animation: O-rainbow 16s infinite ;
+		animation: O-rainbow 16s infinite linear;
 		animation-delay: 0;
 		border: 50px solid red;
     border-radius: 50%;

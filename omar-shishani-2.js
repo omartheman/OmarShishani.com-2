@@ -33,3 +33,11 @@ $('.OS_css_container_div').on('mouseenter', function() {
 $('.OS_css_container_div').on('mouseleave', function() {
 	OS_on = false;
 });
+
+document.onload = runslide_O_load(), runslide_S_load();
+function runslide_O_load() {
+  $('.OS-O').delay(1500).fadeOut(1500).fadeIn(1500);
+};
+function runslide_S_load() {
+  $('.OS-S').fadeOut(1500).fadeIn(1500);
+};
