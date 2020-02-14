@@ -18,6 +18,15 @@ $('.OS_css_container_div').on('mouseenter', function() {
 		return;
 	}
 });
+$('.OS_css_container_div').on('click', function() {
+	if (fadeCompleted === true) {
+	runslide_S();
+	runslide_O();
+	}
+	else {
+		return;
+	}
+});
 
 document.onload = runslide_O_load(), runslide_S_load();
 function runslide_O_load() {
@@ -28,5 +37,3 @@ function runslide_S_load() {
   	fadeCompleted = true;
   });
 };
-
-//make an if else statement for the fade function. You can use booleans, and make it so, at the end of the O fadeIn, it changes a variable to true, so that the function only runs on mouse enter if the variable is true. 
