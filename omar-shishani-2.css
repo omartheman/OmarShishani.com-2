@@ -13,6 +13,12 @@
 	line-height: 1.8em;
 }
 
+.OS-O {
+	display: none;
+}
+.OS-S {
+	display: none;
+}
 
 #OS_css {} /*This id just here for title*/
 	.OS_css_container_div {
@@ -32,14 +38,14 @@
 		z-index: 1;
 	}
 	@keyframes O-rainbow {
-	0% {border: 50px solid orange;}
-  8.33%  {border: 50px solid orange;}
-  25%  {border: 50px solid #f2ff00;}
-  41.66% {border: 50px solid green;}
-  58.33%   {border: 50px solid blue;}
-  75%  {border: 50px solid purple;}
-  91.66%  {border: 50px solid red;}
-  100% {border: 50px solid orange;}
+	0% {border: 50px solid red;}
+  8.33%  {border: 50px solid red;}
+  25%  {border: 50px solid orange;}
+  41.66% {border: 50px solid #e8d100;}
+  58.33%   {border: 50px solid green;}
+  75%  {border: 50px solid blue;}
+  91.66%  {border: 50px solid purple;}
+  100% {border: 50px solid red;}
 	}
 	.O {
 		animation: O-rainbow 16s infinite linear;
