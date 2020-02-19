@@ -9,10 +9,31 @@
 	font-family: Comfortaa, 'Century Gothic 600', sans-serif;
 	text-align: center;
 }
-.welcome-text {
-	line-height: 1.8em;
+#navbar-hamburger {
+  border: 0.1em solid black;
+  border-radius: 10px;
+  height: 0px;
+    width: 0px;
+  position: absolute;
+    left: -10000px;
+    top: auto;
+  transform: scale(0.9);
 }
-
+#navbar-hamburger-a-tag {
+  height: 0px;
+    width: 0px;
+  position: absolute;
+    left: -10000px;
+    top: auto;
+}
+.navbar-hamburger-bun {
+  animation: bun-spin 1s 1;
+  animation-play-state: paused;
+  background-color: black;
+  border-radius: 100px;
+  height: 5px;
+    width: 35px;
+}
 .OS-O {
 	display: none;
 }
@@ -154,7 +175,9 @@
 			top: 44px;
 		width: 130px;
 	}
-
+.welcome-text {
+	line-height: 1.8em;
+}
 
 @font-face {
     font-family: 'Comfortaa';
@@ -168,4 +191,32 @@
       font-family: 'Century Gothic 600';
       src: local('Century Gothic');
       font-weight: 500;
+}
+
+@media (max-width: 700px) {
+#navbar-hamburger {
+    background-color: grey;
+    display: flex; 
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+    height: 50px;
+      width: 50px;
+    position: fixed;
+      left: auto;
+      right: 0;
+      top: 0;
+    z-index: 100;
+  }
+#navbar-hamburger-a-tag {
+    display: flex; 
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+    height: auto;
+      width: auto;
+    margin-right: 0.3vw;
+    position: static;
+    z-index: 100;
+  }
 }

@@ -30,3 +30,7 @@ function runslide_S_load() {
   	fadeCompleted = true;
   });
 };
+
+$('#navbar-hamburger').on('click', function(){
+});
+//Create a navbar that pops up when you click the hamburger. Probably just want to use rowdy's navbar and give it functionality. 
