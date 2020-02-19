@@ -9,6 +9,26 @@
 	font-family: Comfortaa, 'Century Gothic 600', sans-serif;
 	text-align: center;
 }
+#mobile-navigation-error-message-div {
+  background-color: #e3397a;
+  border-radius: 1em;
+  font-size: 1.3em;
+  height: auto;
+    width: auto;
+  margin: 40vh 20vw;
+  overflow: auto;
+  padding: 2em;
+  position: static;
+    left: auto;
+}
+#mobile-navigation-main-content {
+  margin-left: var(--sidebar-width);
+  padding: 0px;
+}
+#mobile-navigation-title {
+  padding: 0.5em;
+  font-size: 1.3em;
+}
 #navbar-hamburger {
   border: 0.1em solid black;
   border-radius: 10px;
@@ -33,6 +53,33 @@
   border-radius: 100px;
   height: 5px;
     width: 35px;
+}
+#navbar-2-mobile-navigation-page {
+  background-color: #f07fe6; 
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+  height: var(--navbar-height);
+  position: fixed;
+    top: 0;
+  width: 100%;
+  z-index: 101;
+}
+#navbar-mobile {
+  position: absolute;
+    left: -10000px;
+  width: 0px;
+  height: 0px;
+}
+  #navbar-mobile a {
+    font-family: 'Josefin Sans', sans-serif;
+  }
+#navbar-mobile-featured {
+  position: absolute;
+    left: -10000px;
+  width: 0px;
+  height: 0px;
+  transform: scale(0.8);
 }
 .OS-O {
 	display: none;
