@@ -26,8 +26,10 @@
 		top: 0;
 		left: 0;
   margin-left: 0;
+  opacity: 0.98;
   padding: 0px;
   width: 100%;
+  z-index: 2;
 }
 #mobile-navigation-title {
   padding: 0.5em;
