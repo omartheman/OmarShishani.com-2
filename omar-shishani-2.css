@@ -78,7 +78,7 @@
   height: 0px;
 }
   #navbar-mobile a {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
   }
 #navbar-mobile-featured {
   position: absolute;
@@ -248,7 +248,7 @@
 
 @media (max-width: 700px) {
 #navbar-hamburger {
-    background-color: grey;
+    background-color: #c7c7c7;
     display: flex; 
       align-items: center;
       flex-direction: column;

@@ -32,6 +32,6 @@ function runslide_S_load() {
 };
 
 $('#navbar-hamburger').on('click', function(){
-	$('#mobile-navigation-main-content').toggle();
+	$('#mobile-navigation-main-content').slideToggle();
 });
 //Create a navbar that pops up when you click the hamburger. Probably just want to use rowdy's navbar and give it functionality. 
