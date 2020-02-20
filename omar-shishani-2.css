@@ -22,8 +22,12 @@
     left: auto;
 }
 #mobile-navigation-main-content {
-  margin-left: var(--sidebar-width);
+	position: fixed;
+		top: 0;
+		left: 0;
+  margin-left: 0;
   padding: 0px;
+  width: 100%;
 }
 #mobile-navigation-title {
   padding: 0.5em;
