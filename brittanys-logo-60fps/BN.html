@@ -47,13 +47,13 @@
       <path
          class="trace-left-lower"
          id="path394"
-         d="m 58.044259,280.18767 v 8.65285"
-         style="display:inline;opacity:1;fill:none;stroke:#000000;stroke-width:0.926;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         d="m 58.044259,280.18767 v 0"
+         style="display:inline;opacity:1;fill:none;stroke:#000000;stroke-width:0.926;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0" />
       <path
          class="trace-left-upper"
          id="path411"
          d="m 58.061799,280.15258 4.115948,-6.40778"
-         style="fill:none;stroke:#000000;stroke-width:0.926;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="fill:none;stroke:#000000;stroke-width:0.926;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:7.7;stroke-dashoffset:7.7;stroke-opacity:1" />
     </g>
     <g
        id="layer20">
@@ -70,9 +70,9 @@
       <circle
          class="node-bottom-right"
          style="display:inline;opacity:1;fill:#808080;stroke-width:0.46235213"
-         r="1.257478"
-         cy="106.28524"
-         cx="62.311039"
+         r="0"
+         cy="105.68524"
+         cx="62.281039"
          id="path3921" />
     </g>
     <g
@@ -80,7 +80,7 @@
       <circle
          class="node-bottom-left"
          style="display:inline;opacity:1;fill:#808080;stroke-width:0.46235213"
-         r="1.257478"
+         r="0"
          cy="112.01453"
          cx="58.019844"
          id="path3921-8" />
@@ -267,12 +267,15 @@
   const diag_n = 0.10202;
   const speedN = 1.2;
   const nodeBottomRight = document.querySelector('.node-bottom-right');
+  const traceLeftUpper = document.querySelector('.trace-left-upper');
+  const traceLeftLower = document.body.querySelector('.trace-left-lower');
+  const nodeBottomLeft = document.body.querySelector('.node-bottom-left');
 
   n_right_draw();
   n_left_draw();
   n_mid_draw();
   trace_right_draw();
-
+  setTimeout(trace_left_upper_draw, 450);
 
   function n_right_draw() {
     let v = 73.329776;
@@ -394,24 +397,70 @@
       else {
         clearInterval(id);
         traceRight.setAttribute('d', 'm 62.263056,267.82832 v 14.77151');
+        node_bottom_right_expand();
       }
     }
   }; 
-
-
-  function circle_right_expand() {
+  function trace_left_upper_draw() {
+    "use strict"; 
+    const id = setInterval(frame, 4);
+    let offset = -7.7;
+    function frame(){
+      if (offset < 0){
+        offset += 0.1;
+        traceLeftUpper.style.strokeDashoffset = offset;
+      }
+      else {
+        clearInterval(id);
+        trace_left_lower_draw();
+      }
+    };
+  };
+  // trace-left-lower 'd' original: d="m 58.044259,280.18767 v 8.65285"
+  function trace_left_lower_draw(){
+    traceLeftLower.style.strokeOpacity = 1;
+    const id = setInterval(frame, 4);
+    let v = 0;
+    function frame() {
+      if (v < 8.65285) {
+        traceLeftLower.setAttribute('d', `m 58.044259,280.18767 v ${v}`);
+        v += 0.1;
+      }
+      else {
+        clearInterval(id);
+        node_bottom_left_expand();
+      }
+    }
+  }
+  function node_bottom_right_expand() {
     "use strict";
-    //make circle's r-value go from 0 to 1.2 
-    // r="1.257478"
-    const id = setInterval(frame, 5);
+    // Original r: r="1.257478"
+    const id = setInterval(frame, 40);
+    let r = 0;
     function frame() {
       if (r < 1.257478){
-
-      };
+        nodeBottomRight.setAttribute('r', r);
+        r += 0.1;
+      }
       else {
         clearInterval(id);
       }
     }
   };
-
+  // 1.257478
+  function node_bottom_left_expand() {
+    "use strict";
+    // Original r: r="1.257478"
+    const id = setInterval(frame, 40);
+    let r = 0;
+    function frame() {
+      if (r < 1.257478){
+        nodeBottomLeft.setAttribute('r', r);
+        r += 0.1;
+      }
+      else {
+        clearInterval(id);
+      }
+    }
+  };
 </script>
