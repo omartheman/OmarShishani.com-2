@@ -1,6 +1,6 @@
 :root {
-	--master-delay: 1.2;
-	--master-duration: 1.2;
+	--master-delay: 1.5;
+	--master-duration: 1.5;
 	--logo-animation-duration: 2s;
 	--b-bottom-array-offset: 36;
 }
@@ -13,13 +13,11 @@
 .b-left {
 	stroke-dasharray: 34;
 	animation: b_left var(--logo-animation-duration) 1 forwards;
-	/*visibility: hidden;*/
 }
 .b-top {
 	stroke-dasharray: 34 !important;
 	stroke-dashoffset: 34;
 	animation: b_top var(--logo-animation-duration) 1 forwards;
-	animation-delay: 0.5s;
 }
 .node-top {
 	opacity: 0 !important;
