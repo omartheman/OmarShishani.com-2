@@ -3,21 +3,23 @@
 	--master-duration: 1.5;
 	--logo-animation-duration: 2s;
 	--b-bottom-array-offset: 36;
+	--b_left_bot_timing: 2s;
+	--b_top_duration: 3.5s;
 }
 .b-bottom {
 	stroke-dasharray: var(--b-bottom-array-offset) !important;
 	stroke-dashoffset: var(--b-bottom-array-offset);
-	animation: b_bottom var(--logo-animation-duration) 1 forwards;
-	animation-delay: 0.5s;
+	animation: b_bottom var(--b_left_bot_timing) 1 forwards;
+	animation-delay: calc(0.5s);
 }
 .b-left {
 	stroke-dasharray: 34;
-	animation: b_left var(--logo-animation-duration) 1 forwards;
+	animation: b_left var(--b_left_bot_timing) 1 forwards;
 }
 .b-top {
 	stroke-dasharray: 34 !important;
 	stroke-dashoffset: 34;
-	animation: b_top var(--logo-animation-duration) 1 forwards;
+	animation: b_top var(--b_top_duration) 1 forwards;
 }
 .node-top {
 	opacity: 0 !important;
