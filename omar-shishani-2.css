@@ -5,9 +5,16 @@
 .body {
 	background-color: var(--body-background-color);
 }
+.home-button {
+  font-family: Comfortaa, sans-serif;
+}
 .h1 {
 	font-family: Comfortaa, 'Century Gothic 600', sans-serif;
 	text-align: center;
+}
+.message-unfinished {
+  font-family: Comfortaa, sans-serif;
+  text-align: center;
 }
 #mobile-navigation-error-message-div {
   background-color: #e3397a;

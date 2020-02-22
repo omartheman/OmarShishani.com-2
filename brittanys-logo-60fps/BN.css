@@ -6,6 +6,11 @@
 	--b_left_bot_timing: 2s;
 	--b_top_duration: 3.5s;
 }
+svg {
+	display: block;
+	margin: auto;
+	height: 90vh;
+}
 body {
 	background-color: white;
 }
