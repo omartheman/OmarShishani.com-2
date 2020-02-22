@@ -266,6 +266,7 @@
   const value = 0.01;
   const diag_n = 0.10202;
   const speedN = 1.2;
+  const nodeBottomRight = document.querySelector('.node-bottom-right');
 
   n_right_draw();
   n_left_draw();
@@ -281,7 +282,7 @@
 
     function frame() {
       "use strict";
-      if (v <= 86.207488) {
+      if (v < 86.207488) {
         v = v + value*mult;
         mult += 1; 
         nRight.setAttribute(
@@ -299,7 +300,7 @@
     const id_n_mid_opacity = setInterval(frame, 5);
     let n_mid_opacity = 0;
     function frame(){
-      if (n_mid_opacity <= 1) {
+      if (n_mid_opacity < 1) {
         nMid.style.opacity = n_mid_opacity;
         n_mid_opacity += 0.03;
       }
@@ -324,7 +325,7 @@
     const id_n_mid = setInterval(frame, 15*speedN);
     const diagMult = 0.010;
     function frame(){
-      if (mx <= 62.242256 && my <= 73.744815) {
+      if (mx < 62.242256 && my < 73.744815) {
         clearInterval(id_n_mid);
         nMid.setAttribute(
           'd',
@@ -353,7 +354,7 @@
     const id = setInterval(frame, 5);
     let opa = 0;
     function frame() {
-      if (opa <= 1) {
+      if (opa < 1) {
         nLeft.style.opacity = opa;
         opa += 0.03; 
       }
@@ -368,7 +369,7 @@
     let v = 90.930991;
     const id = setInterval(frame, 9*speedN);
     function frame(){
-      if (v >= 73.744814) {
+      if (v > 73.744814) {
         nLeft.setAttribute('d',`M 62.242255,90.930991 V ${v}`);
         v -= 0.1;
       }
@@ -395,6 +396,22 @@
         traceRight.setAttribute('d', 'm 62.263056,267.82832 v 14.77151');
       }
     }
-  }; //function trace_right_draw()
+  }; 
+
+
+  function circle_right_expand() {
+    "use strict";
+    //make circle's r-value go from 0 to 1.2 
+    // r="1.257478"
+    const id = setInterval(frame, 5);
+    function frame() {
+      if (r < 1.257478){
+
+      };
+      else {
+        clearInterval(id);
+      }
+    }
+  };
 
 </script>

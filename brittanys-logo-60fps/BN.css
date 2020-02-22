@@ -25,9 +25,9 @@
 	opacity: 0 !important;
 }
 .node-bottom-right {
-	animation: fade-in 2s 1;
+	/*animation: fade-in 2s 1;
 	animation-fill-mode: forwards;
-	opacity: 0 !important;
+	opacity: 0 !important;*/
 }
 .node-bottom-left {
 	animation: fade-in 2s 1;
