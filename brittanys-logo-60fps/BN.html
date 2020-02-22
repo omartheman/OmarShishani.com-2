@@ -265,11 +265,17 @@
   traceRight.style.opacity = 0;
   const value = 0.01;
   const diag_n = 0.10202;
+  nLeft.setAttribute('d', 'M 62.242255,90.930991 V 90.930991')
+
+  n_right();
+  n_left_opacity();
+  n_mid_opacity();
+
 
   function n_right() {
     let v = 73.329776;
     let mult = 1;
-    let id_n_right = setInterval(frame, 5);
+    let id_n_right = setInterval(frame, 20);
     const n_mid_delay = 1000;
 
     function frame() {
@@ -283,7 +289,6 @@
       }
       else {
         clearInterval(id_n_right);
-        n_mid_opacity();
       }
     }
   }
@@ -313,7 +318,8 @@
     let my2Slope = 73.744814;
     let multX = 1;
     let multY = 1.1;
-    const id_n_mid = setInterval(frame, 5);
+    let speedUp = 1;
+    const id_n_mid = setInterval(frame, 22.5);
     const diagMult = 0.010;
     function frame(){
       if (mx <= 62.242256 && my <= 73.744815) {
@@ -322,16 +328,14 @@
           'd',
           'M 77.323669,90.909993 62.242255,73.744814'
         );
-        n_left_draw();
       }
       else {
-        console.log('else');
-        let d = 0.1;
-        mx = mx + (mx2Slope-mxSlope)*diagMult;
-        my = my + (my2Slope-mySlope)*diagMult;
-        console.log(mx, my);
+        mx = mx + (mx2Slope-mxSlope)*diagMult*speedUp;
+        my = my + (my2Slope-mySlope)*diagMult*speedUp;
         multX ++;
         multY ++; 
+        console.log(mx, my);
+        speedUp += 0.1;
         nMid.setAttribute(
           'd', 
           `M 77.323669,90.909993 
@@ -339,17 +343,34 @@
       }
     } //function frame()
   }; //function n_mid_draw()
-// d="M 62.242255,73.744814 V 90.930991" n left
 
 
+
+// d="M 62.242255,73.744814 V 90.930991" : n left original values
+  function n_left_opacity() {
+    "use strict";
+    nLeft.style.opacity = 0;
+    const id = setInterval(frame, 5);
+    let opa = 0;
+    function frame() {
+      if (opa <= 1) {
+        nLeft.style.opacity = opa;
+        opa += 0.03; 
+      }
+      else {
+        clearInterval(id);
+        n_left_draw();
+      }
+    }
+  }
   function n_left_draw(){
     nLeft.style.opacity = 1;
-    let v = 73.744814;
+    let v = 90.930991;
     const id = setInterval(frame, 5);
     function frame(){
-      if (v <= 90.930991) {
-        nLeft.setAttribute('d',`M 62.242255,73.744814 V ${v}`);
-        v += 0.5;
+      if (v >= 73.744814) {
+        nLeft.setAttribute('d',`M 62.242255,90.930991 V ${v}`);
+        v -= 0.1;
       }
       else {
         clearInterval(id);
@@ -377,5 +398,4 @@
     }
   }; //function trace_right_draw()
 
-  n_right();
 </script>

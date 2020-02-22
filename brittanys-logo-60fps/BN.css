@@ -1,6 +1,6 @@
 :root {
-	--master-delay: 0.8;
-	--master-duration: 0.8;
+	--master-delay: 1.2;
+	--master-duration: 1.2;
 	--logo-animation-duration: 2s;
 	--b-bottom-array-offset: 36;
 }
