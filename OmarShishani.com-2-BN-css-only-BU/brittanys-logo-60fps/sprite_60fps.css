@@ -1,0 +1,27 @@
+@keyframes play120 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -14400px 0px;
+  }
+}
+h1{
+  text-align: center;
+  font-size: 3em;
+}
+.shapeshifter {
+  animation-duration: 2000ms;
+  animation-timing-function: steps(120);
+  animation-fill-mode: forwards;
+  width: 120px;
+  height: 120px;
+  background-repeat: no-repeat;
+  transform: scale(6);
+  position: absolute;
+  left: 45vw;
+  top: 40vh;
+}
+.shapeshifter.play {
+  animation-name: play120;
+}

@@ -1,0 +1,9 @@
+Feb 13 2020
+
+1. Make a day and night mode, where night mode is the dark colors and light text 
+2. Animation of O.S. Fading in an out.
+3. Animate O to cycle through rainbow colors.
+4. Animation for OS: when mouse is hovered, S dissapears, and O goes to middle. Then you can click on O to open a menu. 
+
+5. Clouds floating though background at top of page. 
+6. have the O have a little rotating handle on it.
