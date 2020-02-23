@@ -177,7 +177,7 @@ body {
 @keyframes n_mid_draw {
 	from {
 		stroke-dasharray: 23;
-		stroke-dashoffset: -23;
+		stroke-dashoffset: 23;
 	}
 	to {
 		stroke-dasharray: 23;
