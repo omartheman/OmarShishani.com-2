@@ -61,6 +61,9 @@ body {
 	animation-delay: 1.3s;
 	r: 0;
 }
+.node-top {
+	opacity: 0 !important;
+}
 .ruby-bottom-1 {
 	animation: fade-in calc(0.6s * var(--master-duration)) 1;
 	animation-fill-mode: forwards;
@@ -235,13 +238,13 @@ body {
 @keyframes trace_left_lower {
 	from {
 		opacity: 1;
-		stroke-dasharray: var(--trace-left-lower-dasharray);
-		stroke-dashoffset: var(--trace-left-lower-dasharray);
+		stroke-dasharray: 20;
+		stroke-dashoffset: 20;
 	}
 	to {
 
 		opacity: 1;
-		stroke-dasharray: var(--trace-left-lower-dasharray);
+		stroke-dasharray: 20;
 		stroke-dashoffset: 0;
 	}
 }
