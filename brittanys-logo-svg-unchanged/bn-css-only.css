@@ -187,7 +187,7 @@ body {
 @keyframes n_right_draw {
 	from {
 		stroke-dasharray: 13;
-		stroke-dashoffset: -13;
+		stroke-dashoffset: 13;
 	}
 	to {
 		stroke-dasharray: 13;
@@ -224,7 +224,7 @@ body {
 	from {
 		opacity: 1;
 		stroke-dasharray: 7.7;
-		stroke-dashoffset: -7.7;
+		stroke-dashoffset: 7.7;
 	}
 	to {
 		opacity: 1;
