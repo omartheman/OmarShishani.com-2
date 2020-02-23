@@ -1,5 +1,20 @@
-const svgCSSOnly = String.raw`
-<svg class="jewel-svg"
+<!DOCTYPE html>
+<html>
+<head>
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../omar-shishani-2.css">
+  <link rel="stylesheet" type="text/css" href="BN.css">
+	<title></title>
+</head>
+<body>
+  <h1 class="h2 h2--position">Brittany Neal's Logo</h1>
+  </a>
+  <svg class="jewel-svg"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:cc="http://creativecommons.org/ns#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -233,46 +248,17 @@ const svgCSSOnly = String.raw`
          style="display:inline;fill:#ff0000;fill-opacity:1;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none" />
     </g>
   </svg>
-`;
-function getWidth() {
-  return Math.max(
-    document.body.scrollWidth,
-    document.documentElement.scrollWidth,
-    document.body.offsetWidth,
-    document.documentElement.offsetWidth,
-    document.documentElement.clientWidth
-  );
-}
-
-function getHeight() {
-  return Math.max(
-    document.body.scrollHeight,
-    document.documentElement.scrollHeight,
-    document.body.offsetHeight,
-    document.documentElement.offsetHeight,
-    document.documentElement.clientHeight
-  );
-}
-
-console.log('Width:  ' +  getWidth() );
-console.log('Height: ' + getHeight() );
-let browserWidth = getWidth();
-let browserHeight = getHeight();
-const htmlTag = document.querySelector('html');
-const BN_css_version_JS = String.raw`
-  <script src="BN.js"></script>
-`;
-const headTag = document.querySelector('head');
-const linkFullCSSAnimation = String.raw`
-<link rel="stylesheet" type="text/css" href="BN-css-only.css">`;
-const linkJS_CSSAnimation = String.raw`<link rel="stylesheet" type="text/css" href="BN-css-js.css">`;
-const h1 = document.querySelector('h1');
-if (parseInt(browserWidth, 10) >= 700) {
-  headTag.insertAdjacentHTML('beforeend', linkJS_CSSAnimation);
-}
-else {
-  headTag.insertAdjacentHTML('beforeend', linkFullCSSAnimation);
-  htmlTag.insertAdjacentHTML('beforeend', BN_css_version_JS);
-  h1.insertAdjacentHTML('afterbegin', svgCSSOnly);
-}
-
+  <div class="BN-button-container">
+    <a href="../index.html">
+      <h2 class="button-style-1 home-button home-button--position">Homepage</h2>
+    </a>
+    <a href="BN.html">
+      <h2 class="button-style-1 reload-button reload-button--position">Reload</h2>
+    </a>
+  </div>
+  <a href="https://www.linkedin.com/in/brittanyneal22/">
+    <h2 class="h2 h2--position h2--clear-both">See Brittany Neal - Software Engineer - on LinkedIn</h2>
+  </a>
+</body>
+</html>
+<script type="text/javascript" src="BN-css-under-700.js"></script>
