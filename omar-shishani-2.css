@@ -1,16 +1,46 @@
 :root {
 	--body-background-color: white;
+  --margin-home_reload-700plus: 25vw;
 	--OS-logo-color: #4b4545;
+}
+.BN-button-container {
+  margin: auto;
+  width: 20em;
 }
 .body {
 	background-color: var(--body-background-color);
 }
+.button-style-1 {
+  animation: rainbow-light infinite 5s;
+  animation-timing-function: linear;
+  background-color: red;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 0.3em;
+}
 .home-button {
   font-family: Comfortaa, sans-serif;
+}
+.home-button--position {
+  float: right;
+  overflow: auto;
 }
 .h1 {
 	font-family: Comfortaa, 'Century Gothic 600', sans-serif;
 	text-align: center;
+}
+.h2 {
+  font-family: Comfortaa, sans-serif;
+}
+.h2--position {
+  text-align: center;
+}
+.h2--clear-both {
+  clear: both;
+}
+.jewel-svg {
+  max-width: 100%;
+  height: 100%;
 }
 .message-unfinished {
   font-family: Comfortaa, sans-serif;
@@ -95,6 +125,10 @@
   height: 0px;
   transform: scale(0.8);
 }
+.OS-spacer {
+  height: 8em;
+  width: 10em;
+}
 .OS-O {
 	display: none;
 }
@@ -102,12 +136,20 @@
 	display: none;
 }
 
+/*  .OS_css_container_div {
+    height: 8em;
+    position: absolute;
+      left: calc(50vw - 10em);
+      top: ;
+    width: 10em;
+    z-index: 1;*/
+
 #OS_css {} /*This id just here for title*/
 	.OS_css_container_div {
 		height: 8em;
 		position: absolute;
 			left: calc(50vw - 10em);
-			top: 10em;
+			top: 0;
 		width: 10em;
 		z-index: 1;
 	}
@@ -119,18 +161,8 @@
 		width: 220px;
 		z-index: 1;
 	}
-	@keyframes O-rainbow {
-	0% {border: 50px solid red;}
-  8.33%  {border: 50px solid red;}
-  25%  {border: 50px solid orange;}
-  41.66% {border: 50px solid #e8d100;}
-  58.33%   {border: 50px solid green;}
-  75%  {border: 50px solid blue;}
-  91.66%  {border: 50px solid purple;}
-  100% {border: 50px solid red;}
-	}
 	.O {
-		animation: O-rainbow 16s infinite linear;
+		animation: rainbow 16s infinite linear;
 		animation-delay: 0;
 		border: 50px solid red;
     border-radius: 50%;
@@ -200,10 +232,10 @@
 	.S_bars_top_spacing_fill {
 		background-color: var(--OS-logo-color);
 		display: inline-block;
-		height: 12px;
+		height: 16px;
 		position: absolute;
 			left: 30px;
-			top: 32px;
+			top: 30px;
 		width: 125px;
 	}
 	.S_bars_top_spacing_circle_cut {
@@ -255,7 +287,7 @@
 }
 
 @media (max-width: 700px) {
-#navbar-hamburger {
+  #navbar-hamburger {
     background-color: #c7c7c7;
     display: flex; 
       align-items: center;
@@ -269,7 +301,7 @@
       top: 0;
     z-index: 100;
   }
-#navbar-hamburger-a-tag {
+  #navbar-hamburger-a-tag {
     display: flex; 
       align-items: center;
       flex-direction: column;
@@ -280,4 +312,31 @@
     position: static;
     z-index: 100;
   }
+}
+.reload-button {
+  font-family: Comfortaa, sans-serif; 
+  overflow: auto;
+}
+.reload-button--position {
+  float: left;
+}
+@keyframes rainbow {
+0% {border: 50px solid red;}
+8.33%  {border: 50px solid red;}
+25%  {border: 50px solid orange;}
+41.66% {border: 50px solid #e8d100;}
+58.33%   {border: 50px solid green;}
+75%  {border: 50px solid blue;}
+91.66%  {border: 50px solid purple;}
+100% {border: 50px solid red;}
+}
+@keyframes rainbow-light {
+0% {background-color: #ff9b9b;}
+8.33%  {background-color: #ff9b9b;}
+25%  {background-color: #ffb66b;}
+41.66% {background-color: #f7ff83;}
+58.33%   {background-color: #7aff91;}
+75%  {background-color: #d5deff;}
+91.66%  {background-color: #f3b0ff;}
+100% {background-color: #ff9b9b;}
 }
