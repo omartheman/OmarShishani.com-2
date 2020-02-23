@@ -167,7 +167,7 @@ body {
 @keyframes n_left_draw {
 	from {
 		stroke-dasharray: 17.18;
-		stroke-dashoffset: -17.18;
+		stroke-dashoffset: 17.18;
 	}
 	to {
 		stroke-dasharray: 17.18;
