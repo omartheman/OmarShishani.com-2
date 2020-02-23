@@ -6,6 +6,12 @@
 	--b_left_bot_timing: 2s;
 	--b_top_duration: 3.5s;
 }
+svg {
+	display: block;
+	margin: auto;
+	height: 100%;
+	max-width: 100%;
+}
 .b-bottom {
 	stroke-dasharray: var(--b-bottom-array-offset) !important;
 	stroke-dashoffset: var(--b-bottom-array-offset);
