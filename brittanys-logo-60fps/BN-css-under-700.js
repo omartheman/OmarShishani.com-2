@@ -504,9 +504,6 @@ console.log('Height: ' + getHeight() );
 let browserWidth = getWidth();
 let browserHeight = getHeight();
 const htmlTag = document.querySelector('html');
-const BN_css_version_JS = String.raw`
-  <script src="BN.js"></script>
-`;
 const headTag = document.querySelector('head');
 const linkFullCSSAnimation = String.raw`
 <link rel="stylesheet" type="text/css" href="BN-css-only.css">`;
@@ -522,7 +519,6 @@ if (parseInt(browserWidth, 10) >= 700) {
 }
 else {
   headTag.insertAdjacentHTML('beforeend', linkFullCSSAnimation);
-  htmlTag.insertAdjacentHTML('beforeend', BN_css_version_JS);
   h1.insertAdjacentHTML('afterend', svgCSSOnly);
 }
 
