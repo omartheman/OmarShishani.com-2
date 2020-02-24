@@ -1,14 +1,16 @@
 :root {
 	--body-background-color: white;
   --margin-home_reload-700plus: 25vw;
-	--OS-logo-color: #4b4545;
+  --OS-logo-color: #4b4545;
+  --sidebar-width: 10em;
 }
 .BN-button-container {
   margin: auto;
   width: 20em;
 }
 .body {
-	background-color: var(--body-background-color);
+  background-color: var(--body-background-color);
+  margin: 0;
 }
 .button-style-1 {
   animation: rainbow-light infinite 5s;
@@ -41,6 +43,9 @@
 .jewel-svg {
   max-width: 100%;
   height: 100%;
+}
+.main {
+  margin-left: var(--sidebar-width);
 }
 .message-unfinished {
   font-family: Comfortaa, sans-serif;
@@ -125,26 +130,23 @@
   height: 0px;
   transform: scale(0.8);
 }
-.OS-spacer {
-  height: 8em;
-  width: 10em;
-}
-.OS-O {
-	display: none;
-}
-.OS-S {
-	display: none;
+.sidebar {
+  background-color: lightgrey;
+  height: 100vh;
+  width: var(--sidebar-width);
 }
 
-/*  .OS_css_container_div {
+/*START OF OS STYLING*/
+  .OS-spacer {
     height: 8em;
-    position: absolute;
-      left: calc(50vw - 10em);
-      top: ;
     width: 10em;
-    z-index: 1;*/
-
-#OS_css {} /*This id just here for title*/
+  }
+  .OS-O {
+    display: none;
+  }
+  .OS-S {
+    display: none;
+  }
 	.OS_css_container_div {
 		height: 8em;
 		position: absolute;
