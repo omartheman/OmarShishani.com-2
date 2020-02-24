@@ -3,7 +3,6 @@
   --margin-home_reload-700plus: 25vw;
   --OS-logo-color: #4b4545;
   --sidebar-width: 10em;
-  --star-flash-duration: 0.7s;
 }
 .BN-button-container {
   margin: auto;
@@ -134,46 +133,7 @@
 .sidebar {
   background-color: lightgrey;
   height: 100vh;
-  position: fixed;
   width: var(--sidebar-width);
-}
-.sidebar__animations-object {
-  pointer-events: none; 
-}
-.sidebar__link-animations {
-  font-family: Comfortaa, sans-serif;
-  font-weight: 600;
-  text-align: center; 
-}
-.sidebar__link-animations:hover .star-big-upper-left {
-  animation: fade_flash var(--star-flash-duration) infinite;
-}
-.sidebar__link-animations:hover .star-big-upper-right {
-  animation: fade_flash var(--star-flash-duration) infinite;
-  animation-delay: 0.2s;
-}
-.sidebar__link-animations:hover .star-big-lower {
-  animation: fade_flash var(--star-flash-duration) infinite;
-  animation-delay: 0.1s;
-}
-.sidebar__link-animations:hover .star-small-lower-left {
-  animation: fade_flash var(--star-flash-duration) infinite;
-  animation-delay: 0.3s;
-}
-.sidebar__link-animations:hover .star-small-upper-left {
-  animation: fade_flash var(--star-flash-duration) infinite;
-  animation-delay: 0.1s;
-}
-.sidebar__link-animations:hover .star-small-upper-right {
-  animation: fade_flash var(--star-flash-duration) infinite;
-  animation-delay: 0.4s;
-}
-.sidebar__link-animations:hover .star-small-lower-right {
-  animation: fade_flash var(--star-flash-duration) infinite;
-  animation-delay: 0s;
-}
-.sidebar__link--font {
-  font-size: 1.5em;
 }
 
 /*START OF OS STYLING*/
@@ -381,15 +341,4 @@
 75%  {background-color: #d5deff;}
 91.66%  {background-color: #f3b0ff;}
 100% {background-color: #ff9b9b;}
-}
-@keyframes fade_flash {
-	0% {
-		opacity: 1;
-  }
-  50% {
-    opacity: 0
-  }
-	100% {
-		opacity: 1;
-	}
 }
