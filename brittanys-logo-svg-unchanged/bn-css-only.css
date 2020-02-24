@@ -138,8 +138,8 @@ body {
 .trace-left-lower {
 	animation: trace_left_lower 0.6s 1 forwards;
 	animation-delay: 0.9s;
-	opacity: 0 !important;
-	stroke-dasharray: var(--trace-left-lower-dasharray);
+	stroke-dashoffset: 20;
+	stroke-dasharray: 20;
 	animation-timing-function: linear;
 }
 .trace-right {
