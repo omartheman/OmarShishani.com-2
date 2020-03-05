@@ -78,6 +78,14 @@
 #mobile-navigation-title {
   padding: 0.5em;
   font-size: 1.3em;
+}#myVideo {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
 #navbar-hamburger {
   border: 0.1em solid black;
@@ -329,6 +337,9 @@
 }
 
 @media (max-width: 700px) {
+  .main {
+    margin-left: 0;
+  }
   #navbar-hamburger {
     background-color: #c7c7c7;
     display: flex; 
@@ -354,6 +365,9 @@
     position: static;
     z-index: 100;
   }
+  .sidebar {
+    display: none;
+  }
 }
 .reload-button {
   font-family: Comfortaa, sans-serif; 
@@ -361,6 +375,19 @@
 }
 .reload-button--position {
   float: left;
+}
+@media (min-aspect-ratio: 16/9) {
+  #myVideo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #myVideo {
+    width: auto;
+    height: 100%;
+  }
 }
 @keyframes rainbow {
 0% {border: 50px solid red;}
