@@ -151,6 +151,18 @@
 .os-v2-container {
   text-align: center; 
 }
+.o-plain {
+  display: none;
+  animation: rainbow_svg_fill infinite 16s linear;
+  stroke: #c3c3c3;
+}
+.reload-button {
+  font-family: Comfortaa, sans-serif; 
+  overflow: auto;
+}
+.reload-button--position {
+  float: left;
+}
 .sidebar {
   background-color: lightgrey;
   height: 100vh;
@@ -195,24 +207,25 @@
 .sidebar__link--font {
   font-size: 1.5em;
 }
+.s-plain {
+  display: none;
+  stroke: #c3c3c3;
+}
 .welcome-text {
 	line-height: 1.8em;
 }
-
 @font-face {
     font-family: 'Comfortaa';
     src: url('fonts/comfortaa-variablefont_wght-webfont.woff2') format('woff2'),
          url('fonts/comfortaa-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
       font-family: 'Century Gothic 600';
       src: local('Century Gothic');
       font-weight: 500;
 }
-
 @media (max-width: 700px) {
   .main {
     margin-left: 0;
@@ -245,13 +258,6 @@
   .sidebar {
     display: none;
   }
-}
-.reload-button {
-  font-family: Comfortaa, sans-serif; 
-  overflow: auto;
-}
-.reload-button--position {
-  float: left;
 }
 @media (max-width: 700px) {
   #navbar-2-mobile-navigation-page {
@@ -356,14 +362,4 @@
   75%  {fill:blue;}
   91.66%  {fill:purple;}
   100% {fill:red;}
-}
-
-.o-plain {
-  display: none;
-  animation: rainbow_svg_fill infinite 16s linear;
-  stroke: #c3c3c3;
-}
-.s-plain {
-  display: none;
-  stroke: #c3c3c3;
 }
