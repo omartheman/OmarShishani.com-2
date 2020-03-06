@@ -17,8 +17,8 @@ function runslide_both() {
 		return;
 	}
 }
-$('.OS_css_container_div').on('mouseenter', runslide_both);
-$('.OS_css_container_div').on('click', runslide_both);
+$('.os-v2-svg').on('mouseenter', runslide_both);
+$('.os-v2-svg').on('click', runslide_both);
 
 document.onload = runslide_O_load(), runslide_S_load();
 function runslide_O_load() {

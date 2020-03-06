@@ -143,6 +143,14 @@
   height: 0px;
   transform: scale(0.8);
 }
+.os-v2-svg {
+  display: inline-block;
+  margin: auto;
+  transform: scale(0.8);
+}
+.os-v2-container {
+  text-align: center; 
+}
 .sidebar {
   background-color: lightgrey;
   height: 100vh;
@@ -436,7 +444,11 @@
 }
 
 .o-plain {
+  display: none;
   animation: rainbow_svg_fill infinite 16s linear;
+  stroke: #c3c3c3;
 }
 .s-plain {
+  display: none;
+  stroke: #c3c3c3;
 }
