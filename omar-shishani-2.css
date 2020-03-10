@@ -350,7 +350,12 @@
   }
 }
 @media (max-width: 650px) {
-  
+  .header__heading-homepage {
+    float: none;
+  }
+  .profile-pic {
+    float: none;
+  }
 }
 @media (min-aspect-ratio: 16/9) {
   #myVideo {
