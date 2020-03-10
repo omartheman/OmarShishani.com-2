@@ -37,6 +37,13 @@
   width: calc(100% - var(--sidebar-width));
   bottom: 0;
 }
+  .footer a {
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+    padding: 3px;
+    text-decoration: none;
+  }
 .header {
   background-color: #e0ade6ba;
   float: right;
