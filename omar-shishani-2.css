@@ -299,8 +299,6 @@
   .sidebar {
     display: none;
   }
-}
-@media (max-width: 700px) {
   #navbar-2-mobile-navigation-page {
     background-color: #f07fe6; 
     display: flex;
@@ -351,6 +349,7 @@
     font-size: 1.7rem;
   }
 }
+
 @media (min-aspect-ratio: 16/9) {
   #myVideo {
     width: 100%;
