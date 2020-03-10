@@ -21,6 +21,13 @@
   border-radius: 10px;
   padding: 0.3em;
 }
+.header {
+  background-color: lightblue;
+  float: right;
+  height: 10em;
+  margin-left: var(--sidebar-width);
+  width: calc(100% - var(--sidebar-width));
+}
 .home-button {
   font-family: Comfortaa, sans-serif;
 }
