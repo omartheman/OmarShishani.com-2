@@ -24,7 +24,6 @@
 .header {
   background-color: lightblue;
   float: right;
-  height: 10em;
   margin-left: var(--sidebar-width);
   width: calc(100% - var(--sidebar-width));
 }
@@ -154,7 +153,6 @@
 .os-v2-svg {
   display: inline-block;
   margin: auto;
-  transform: scale(0.8);
 }
 .os-v2-container {
   text-align: center; 
@@ -239,6 +237,9 @@
       font-weight: 500;
 }
 @media (max-width: 700px) {
+  .header {
+    width: 100%;
+  }
   .main {
     margin-left: 0;
   }
