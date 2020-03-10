@@ -27,12 +27,13 @@
 }
 .footer {
   background-color: #e0ade6ba;
-  position: fixed;
-    right: 0;
   display: flex;
     align-items: center;
     justify-content: space-around;
+  font-family: source_sans_probold;
   height: 4em;
+  position: fixed;
+    right: 0;
   width: calc(100% - var(--sidebar-width));
   bottom: 0;
 }
