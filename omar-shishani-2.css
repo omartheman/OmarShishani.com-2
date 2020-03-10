@@ -1,5 +1,6 @@
 :root {
-	--body-background-color: white;
+  --body-background-color: white;
+  --header__subheading-margin-left: 1em;
   --margin-home_reload-700plus: 25vw;
   --OS-logo-color: #4b4545;
   --profile-pic-padding: 1em;
@@ -32,7 +33,8 @@
 .header__subheading {
   float: left;
   font: 1.5em 'source_sans_proregular', sans-serif;
-  width: calc(100% - var(--profile-pic-width) + 4.6em - var(--profile-pic-padding)*2);
+  margin-left: 1em;
+  width: calc(100% - var(--profile-pic-width) + 4.6em - var(--profile-pic-padding)*2 - var(--header__subheading-margin-left));
 }
 .header__heading-homepage {
   float: left;
@@ -52,7 +54,7 @@
 .intro {
   background-color: rgba(255, 255, 255, 0.5);
   clear: both;
-  padding: 0.1em 2em 1em 2em;
+  padding: 1em 2em 1em 2em;
 }
 .jewel-svg {
   max-width: 100%;
