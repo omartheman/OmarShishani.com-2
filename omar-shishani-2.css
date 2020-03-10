@@ -2,6 +2,7 @@
 	--body-background-color: white;
   --margin-home_reload-700plus: 25vw;
   --OS-logo-color: #4b4545;
+  --profile-pic-width: 14em;
   --sidebar-width: 10em;
   --star-flash-duration: 0.7s;
 }
@@ -26,6 +27,10 @@
   float: right;
   margin-left: var(--sidebar-width);
   width: calc(100% - var(--sidebar-width));
+}
+.heading--homepage {
+  float: left;
+  width: calc(100% - var(--profile-pic-width)/2);
 }
 .home-button {
   font-family: Comfortaa, sans-serif;
@@ -152,7 +157,9 @@
 }
 .os-v2-svg {
   display: inline-block;
-  margin: auto;
+  height: 8em;
+  margin: auto auto 2em;;
+  width: 8em;
 }
 .os-v2-container {
   text-align: center; 
@@ -161,6 +168,12 @@
   display: none;
   animation: rainbow_svg_fill infinite 16s linear;
   stroke: #c3c3c3;
+}
+.profile-pic {
+  border-radius: 100%;
+  float: right;
+  height: var(--profile-pic-width);
+  width: var(--profile-pic-width);
 }
 .reload-button {
   font-family: Comfortaa, sans-serif; 
