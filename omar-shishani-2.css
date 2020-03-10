@@ -171,6 +171,7 @@
 }
 .profile-pic {
   border-radius: 100%;
+  display: block;
   float: right;
   height: var(--profile-pic-width);
   padding: 1em;
@@ -352,8 +353,17 @@
 @media (max-width: 650px) {
   .header__heading-homepage {
     float: none;
+    margin: 0.5em auto auto;
+    text-align: left;
+    width: calc(100% - 2em);
+  }
+  .header__subheading {
+    float: none;
+    margin-left: 0;
+    width: 100%;
   }
   .profile-pic {
+    margin: auto;    
     float: none;
   }
 }
