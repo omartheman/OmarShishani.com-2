@@ -14,6 +14,7 @@
 }
 .body {
   background-color: var(--body-background-color);
+  font-family: source_sans_proregular;
   margin: 0;
 }
 .button-style-1 {
@@ -43,7 +44,7 @@
 }
 .header__subheading {
   float: left;
-  font: 1.5em 'source_sans_proregular', sans-serif;
+  font: 1.5em source_sans_proregular, sans-serif;
   margin-left: var(--header__subheading-margin-left);
   width: calc(100% - var(--profile-pic-width) + 4.6em - var(--profile-pic-padding)*2 - var(--header__subheading-margin-left));
 }
