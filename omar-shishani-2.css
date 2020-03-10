@@ -2,6 +2,7 @@
 	--body-background-color: white;
   --margin-home_reload-700plus: 25vw;
   --OS-logo-color: #4b4545;
+  --profile-pic-padding: 1em;
   --profile-pic-width: 14em;
   --sidebar-width: 10em;
   --star-flash-duration: 0.7s;
@@ -30,12 +31,12 @@
 }
 .header__subheading {
   float: left;
-  font: 1.5em Comfortaa;
-  width: calc(100% - var(--profile-pic-width) + 4.6em);
+  font: 1.5em 'source_sans_proregular', sans-serif;
+  width: calc(100% - var(--profile-pic-width) + 4.6em - var(--profile-pic-padding)*2);
 }
 .header__heading-homepage {
   float: left;
-  width: calc(100% - var(--profile-pic-width)/2);
+  width: calc(100% - var(--profile-pic-width)/2 - var(--profile-pic-padding)*2);
 }
 .home-button {
   font-family: Comfortaa, sans-serif;
@@ -170,6 +171,7 @@
   border-radius: 100%;
   float: right;
   height: var(--profile-pic-width);
+  padding: 1em;
   width: var(--profile-pic-width);
 }
 .reload-button {
@@ -248,15 +250,15 @@
 }
 @font-face {
     font-family: 'source_sans_probold';
-    src: url('sourcesanspro-bold-webfont.woff2') format('woff2'),
-         url('sourcesanspro-bold-webfont.woff') format('woff');
+    src: url('fonts/sourcesanspro-bold-webfont.woff2') format('woff2'),
+         url('fonts/sourcesanspro-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'source_sans_proregular';
-    src: url('sourcesanspro-regular-webfont.woff2') format('woff2'),
-         url('sourcesanspro-regular-webfont.woff') format('woff');
+    src: url('fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('fonts/sourcesanspro-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
