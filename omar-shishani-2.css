@@ -26,16 +26,14 @@
 }
 .footer {
   background-color: #e0ade6ba;
-  height: 4em;
-  width: calc(50% - var(--sidebar-width));
   position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-.footer--links {
+    right: 0;
   display: flex;
     align-items: center;
     justify-content: space-around;
+  height: 4em;
+  width: calc(100% - var(--sidebar-width));
+  bottom: 0;
 }
 .header {
   background-color: #e0ade6ba;
