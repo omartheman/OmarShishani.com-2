@@ -349,7 +349,9 @@
     font-size: 1.7rem;
   }
 }
-
+@media (max-width: 650px) {
+  
+}
 @media (min-aspect-ratio: 16/9) {
   #myVideo {
     width: 100%;
