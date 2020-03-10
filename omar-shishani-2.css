@@ -1,6 +1,6 @@
 :root {
   --body-background-color: white;
-  --header__subheading-margin-left: 1em;
+  --header__subheading-margin-left: 1.5em;
   --margin-home_reload-700plus: 25vw;
   --OS-logo-color: #4b4545;
   --profile-pic-padding: 1em;
@@ -24,6 +24,19 @@
   border-radius: 10px;
   padding: 0.3em;
 }
+.footer {
+  background-color: #e0ade6ba;
+  height: 4em;
+  width: calc(50% - var(--sidebar-width));
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.footer--links {
+  display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 .header {
   background-color: #e0ade6ba;
   float: right;
@@ -33,11 +46,13 @@
 .header__subheading {
   float: left;
   font: 1.5em 'source_sans_proregular', sans-serif;
-  margin-left: 1em;
+  margin-left: var(--header__subheading-margin-left);
   width: calc(100% - var(--profile-pic-width) + 4.6em - var(--profile-pic-padding)*2 - var(--header__subheading-margin-left));
 }
 .header__heading-homepage {
+  margin-left: 1em;
   float: left;
+  font-family: Comfortaa, 'Century Gothic 600', sans-serif;
   width: calc(100% - var(--profile-pic-width)/2 - var(--profile-pic-padding)*2);
 }
 .home-button {
@@ -237,7 +252,7 @@
   stroke: #c3c3c3;
 }
 .welcome-text {
-	line-height: 1.8em;
+	line-height: 2em;
 }
 @font-face {
     font-family: 'Comfortaa';
@@ -266,6 +281,13 @@
     font-style: normal;
 }
 @media (max-width: 700px) {
+  .hamburger-spacer {
+    background-color: orange;
+    position: static;
+      left: auto;
+    height: 3.5em;
+    width: 3.5em; 
+  }
   .header {
     width: 100%;
   }
@@ -353,14 +375,14 @@
 @media (max-width: 650px) {
   .header__heading-homepage {
     float: none;
-    margin: 0.5em auto auto;
+    margin: 0.5em auto 0 1em;
     text-align: left;
-    width: calc(100% - 2em);
+    width: calc(100% - 2.8em);
   }
   .header__subheading {
     float: none;
-    margin-left: 0;
-    width: 100%;
+    margin: auto 1em 1em;
+    width: calc(100% - 2em);
   }
   .profile-pic {
     margin: auto;    
