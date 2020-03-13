@@ -264,9 +264,6 @@
   display: none;
   stroke: var(--os-border-color);
 }
-.subheading-1 {
-  
-}
 .subheading-1--BN {
 /* Enligt BEM, modifiern BN får sin egen selektor, för att den är annorlounda än andra h2-subheadings skulle vara */
   text-align: center;
