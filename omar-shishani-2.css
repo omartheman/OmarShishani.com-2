@@ -72,6 +72,10 @@
   font-family: Comfortaa, 'Century Gothic 600', sans-serif;
   width: calc(100% - var(--profile-pic-width)/2 - var(--profile-pic-padding)*2);
 }
+.heading {
+  font-family: Comfortaa, 'Century Gothic 600', sans-serif;
+  margin-left: 1em;
+}
 .home-button {
   font-family: Comfortaa, sans-serif;
 }
