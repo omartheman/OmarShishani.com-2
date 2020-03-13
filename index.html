@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- $ Viewport meta för att göra så browsern inte försökar använda automatisk anpassning till mobil storlek $ -->
 	<link rel="stylesheet" type="text/css" href="omar-shishani-2.css">
 	<link rel="stylesheet" media="(max-width: 450px)" href="max-450px.css">
   <script src="jquery-3.4.1.js"></script>
@@ -11,8 +13,10 @@
 </head>
 	<body class="body">
 		<header class="header">
+		<!-- $ Elementet <header> används för bättre semantik $ -->
 			<h1 class="header__heading-homepage">
 				<span class="welcome-text">Welcome.</span> My&nbsp;name&nbsp;is Omar&nbsp;Shishani.
+				<!-- $ <span> och nbsp används för att göra <h1> ordplaceringen få en finare komposition i olika skärmstorlekar (se processanalys) $ -->
 			</h1>
 			<img class="profile-pic" src="omar-3.jpg" alt="Profile Picture">	
 			<h2 class="header__subheading">I am a front-end web developer, from Pleasant Hill, California.</h2>
@@ -34,15 +38,14 @@
 		</aside>
 
 		<main class="main">
+		<!-- $ Main grupperar huvudinnehållet $ -->
 			<div class="intro">
 				<h2 class="message-unfinished">Together we can create a site to attract your audience.</h2>
 			</div> <!--div class="intro" -->
-			<div id="navbar-hamburger"> 
-				<div class="navbar-hamburger-bun"></div>
-				<div class="navbar-hamburger-bun"></div>
-				<div class="navbar-hamburger-bun"></div>
-			</div>
+			<!-- $  $ -->
+			<!-- $ Jag använder kommentarer på slutet av stora divs, för att veta vilken div som det är som ligger ovanför. Detta är bra när man läser koden under, eller har flera divs staplade på varandra $ -->
 			<div id="mobile-navigation-main-content">
+				<!-- $ navbar elementet och mobile navigation kommer sist i HTML, för semantik $ -->
 				<nav id="navbar-mobile">
 					<a href="index.html">
 						Home
@@ -52,6 +55,11 @@
 					</a>
 				</nav> <!-- <nav id="navbar-3"> -->
 			</div> <!-- <div id="mobile-navigation-main-content"> -->
+			<div id="navbar-hamburger"> 
+				<div class="navbar-hamburger-bun"></div>
+				<div class="navbar-hamburger-bun"></div>
+				<div class="navbar-hamburger-bun"></div>
+			</div>
 			<!-- <video autoplay muted loop id="myVideo">
 				<source src="waves3.0.mp4" type="video/mp4">
 			</video> -->

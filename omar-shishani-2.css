@@ -1,6 +1,6 @@
 
-/* Regex for finding comments: \/\*\$.+\$\*\/      */
-/* Use regex to replace comments with space, then use \n to find and remove newlines */
+/* $ Regex for finding comments: \/\*\$.+\$\*\/ $ */
+/* $ Use regex to replace comments with space, then use \n to find and remove newlines $ */
 
 :root {
   --body-background-color: white;
@@ -37,8 +37,7 @@
     justify-content: space-around;
   font-family: source_sans_probold;
   height: 4em;
-  position: fixed;
-    right: 0;
+  margin-left: var(--sidebar-width);
   width: calc(100% - var(--sidebar-width));
   bottom: 0;
 }
@@ -304,9 +303,11 @@
     width: 100%;
   }
   .footer {
+  /* $ Footer ges en media query för göra att den tar upp hela skärmen efter media queryn $ */
+    margin-left: 0;
     width: 100%;
+    /* $ Margin-left och width förändras till 0 och 100% när sidebar försvinnner, annars lämnar dom öppen rum var sidebar var $ */
   }
-  /*$ Footer ges en media query för göra att den tar upp hela skärmen efter media queryn $*/
   .main {
     margin-left: 0;
   }
