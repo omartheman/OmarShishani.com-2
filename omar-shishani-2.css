@@ -224,7 +224,7 @@
   color: #8300cc;
   text-decoration: none;
 }
-.sidebar__link-wrapper {
+.sidebar__link-animations-wrapper {
   font-family: Comfortaa, sans-serif;
   font-weight: 600;
   text-align: center; 
@@ -232,31 +232,30 @@
 .sidebar__animations-object {
   pointer-events: none; 
 }
-  /* $  $ */
-.sidebar__link-animations:hover .star-big-upper-left {
+.sidebar__link-animations-wrapper:hover .star-big-upper-left {
   animation: fade_flash var(--star-flash-duration) infinite;
 }
-.sidebar__link-animations:hover .star-big-upper-right {
+.sidebar__link-animations-wrapper:hover .star-big-upper-right {
   animation: fade_flash var(--star-flash-duration) infinite;
   animation-delay: 0.2s;
 }
-.sidebar__link-animations:hover .star-big-lower {
+.sidebar__link-animations-wrapper:hover .star-big-lower {
   animation: fade_flash var(--star-flash-duration) infinite;
   animation-delay: 0.1s;
 }
-.sidebar__link-animations:hover .star-small-lower-left {
+.sidebar__link-animations-wrapper:hover .star-small-lower-left {
   animation: fade_flash var(--star-flash-duration) infinite;
   animation-delay: 0.3s;
 }
-.sidebar__link-animations:hover .star-small-upper-left {
+.sidebar__link-animations-wrapper:hover .star-small-upper-left {
   animation: fade_flash var(--star-flash-duration) infinite;
   animation-delay: 0.1s;
 }
-.sidebar__link-animations:hover .star-small-upper-right {
+.sidebar__link-animations-wrapper:hover .star-small-upper-right {
   animation: fade_flash var(--star-flash-duration) infinite;
   animation-delay: 0.4s;
 }
-.sidebar__link-animations:hover .star-small-lower-right {
+.sidebar__link-animations-wrapper:hover .star-small-lower-right {
   animation: fade_flash var(--star-flash-duration) infinite;
   animation-delay: 0s;
 }
@@ -276,6 +275,7 @@
 	line-height: 2em;
 }
 @font-face {
+/* $ Comfortaa inkluderas som en font-face, ifall Google Fonts länk fungerar inte $ */
     font-family: 'Comfortaa';
     src: url('fonts/comfortaa-variablefont_wght-webfont.woff2') format('woff2'),
          url('fonts/comfortaa-variablefont_wght-webfont.woff') format('woff');
@@ -302,21 +302,15 @@
     font-style: normal;
 }
 @media (max-width: 700px) {
-  .hamburger-spacer {
-    background-color: orange;
-    position: static;
-      left: auto;
-    height: 3.5em;
-    width: 3.5em; 
-  }
-  .header {
-    width: 100%;
-  }
+/* $ Vid 700px tar sidebar upp för mycket rum på skärmen. Dags att byta till dropdown nav meny $ */
   .footer {
   /* $ Footer ges en media query för göra att den tar upp hela skärmen efter media queryn $ */
     margin-left: 0;
     width: 100%;
     /* $ Margin-left och width förändras till 0 och 100% när sidebar försvinnner, annars lämnar dom öppen rum var sidebar var $ */
+  }
+  .header {
+    width: 100%;
   }
   .main {
     margin-left: 0;
@@ -348,6 +342,7 @@
   }
   .sidebar {
     display: none;
+    /* $ Display:none tar bort elementet från dokumentflödet. Dock kan inga med screen-reader se elementet i koden heller. $ */
   }
   #navbar-2-mobile-navigation-page {
     background-color: #f07fe6; 
@@ -400,6 +395,7 @@
   }
 }
 @media (max-width: 650px) {
+/* $ Vid 650px krockar profilbilden och h1. följande selektorer åtgärder detta $ */
   .header__heading--homepage {
     float: none;
     margin: 0.5em auto 0 1em;
