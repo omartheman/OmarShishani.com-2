@@ -1,3 +1,7 @@
+
+/* Regex for finding comments: \/\*\$.+\$\*\/      */
+/* Use regex to replace comments with space, then use \n to find and remove newlines */
+
 :root {
   --body-background-color: white;
   --header__subheading-margin-left: 1.5em;
@@ -299,6 +303,10 @@
   .header {
     width: 100%;
   }
+  .footer {
+    width: 100%;
+  }
+  /*$ Footer ges en media query för göra att den tar upp hela skärmen efter media queryn $*/
   .main {
     margin-left: 0;
   }
