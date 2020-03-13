@@ -4,6 +4,7 @@
 
 :root {
 /* $ Variabler underlättar element samspel, särskilt för float $ */
+  --block-text-main-padding: 2rem;
   --body-background-color: white;
   --header__subheading-margin-left: 1.5em;
   --margin-home_reload-700plus: 25vw;
@@ -16,19 +17,22 @@
 }
 .block-text-main-1 {
   background-color: #e0ade6ba;
+  border-radius: 10px;
   height: 20rem;
   float: left;
-  margin: 1rem;
+  margin: 1rem 0.5rem 1rem 1rem;
+  padding: var(--block-text-main-padding);
   width: 20rem; 
-  width: calc(50% - 2rem); 
+  width: calc(50% - 1.5rem - 2*(var(--block-text-main-padding)));
 }
 .block-text-main-2 {
   background-color: #e0ade1ba;
+  border-radius: 10px;
   height: 20rem;
   float: right;
-  margin: 1rem;
-  width: 20rem; 
-  width: calc(50% - 2rem); 
+  margin: 1rem 1rem 1rem 0.5rem;
+  padding: var(--block-text-main-padding);
+  width: calc(50% - 1.5rem - 2*(var(--block-text-main-padding))); 
 }
 .BN-button-container {
   margin: auto;
