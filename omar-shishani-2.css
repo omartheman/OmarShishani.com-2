@@ -19,8 +19,11 @@
   width: 20em;
 }
 .body {
+/* $  $ */
+/* $ Enligt BEM är det bättre att använda en class för att selektera body, istället för body selektorn (se processanalys) $ */
   background-color: var(--body-background-color);
-  font-family: source_sans_proregular;
+  font-family: source_sans_proregular, sans-serif;
+  /* $ Denna font-family används under class "body" som en default-backup font familj. $ */
   margin: 0;
 }
 .button-style-1 {
@@ -260,6 +263,14 @@
 .s-plain {
   display: none;
   stroke: var(--os-border-color);
+}
+.subheading-1 {
+  
+}
+.subheading-1--BN {
+/* Enligt BEM, modifiern BN får sin egen selektor, för att den är annorlounda än andra h2-subheadings skulle vara */
+  text-align: center;
+  clear: both;
 }
 .welcome-text {
 	line-height: 2em;
