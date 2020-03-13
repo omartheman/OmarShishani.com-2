@@ -216,6 +216,11 @@
   width: var(--sidebar-width);
 }
 .sidebar__link {
+/* $ text-decoration tas bort för att göra länkarna finare $ */
+  color: #8300cc;
+  text-decoration: none;
+}
+.sidebar__link:visited {
   color: #8300cc;
   text-decoration: none;
 }
