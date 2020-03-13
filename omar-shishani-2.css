@@ -2,6 +2,7 @@
   --body-background-color: white;
   --header__subheading-margin-left: 1.5em;
   --margin-home_reload-700plus: 25vw;
+  --os-border-color: black;
   --OS-logo-color: #4b4545;
   --profile-pic-padding: 1em;
   --profile-pic-width: 14em;
@@ -189,7 +190,7 @@
 .o-plain {
   display: none;
   animation: rainbow_svg_fill infinite 16s linear;
-  stroke: #c3c3c3;
+  stroke: var(--os-border-color);
 }
 .profile-pic {
   border-radius: 100%;
@@ -256,7 +257,7 @@
 }
 .s-plain {
   display: none;
-  stroke: #c3c3c3;
+  stroke: var(--os-border-color);
 }
 .welcome-text {
 	line-height: 2em;
