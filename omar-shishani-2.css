@@ -1,5 +1,5 @@
 
-/* $ Regex for finding comments: \/\*\$.+\$\*\/ $ */
+/* $ Regex for finding comments: \/\*\$.+\$\*\/ --- $ */
 /* $ Use regex to replace comments with space, then use \n to find and remove newlines $ */
 
 :root {
@@ -13,6 +13,22 @@
   --profile-pic-width: 14em;
   --sidebar-width: 10em;
   --star-flash-duration: 0.7s;
+}
+.block-text-main-1 {
+  background-color: #e0ade6ba;
+  height: 20rem;
+  float: left;
+  margin: 1rem;
+  width: 20rem; 
+  width: calc(50% - 2rem); 
+}
+.block-text-main-2 {
+  background-color: #e0ade1ba;
+  height: 20rem;
+  float: right;
+  margin: 1rem;
+  width: 20rem; 
+  width: calc(50% - 2rem); 
 }
 .BN-button-container {
   margin: auto;
