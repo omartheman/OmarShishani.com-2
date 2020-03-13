@@ -70,14 +70,16 @@
   margin-left: 1em;
   float: left;
   font-family: Comfortaa, 'Century Gothic 600', sans-serif;
+  /* $ Väljer Century Gothic som backup, för att den är lik Comfortaa $ */
   width: calc(100% - var(--profile-pic-width)/2 - var(--profile-pic-padding)*2);
+  /* $ Att kalkylera width gör det lättare att ändra storlek av andra element, utan att behöva ända värden i flera selektorer $ */
 }
 .heading {
   font-family: Comfortaa, 'Century Gothic 600', sans-serif;
   margin-left: 1em;
 }
 .home-button {
-  font-family: Comfortaa, sans-serif;
+  font-family: Comfortaa, 'Century Gothic 600', sans-serif;
 }
 .home-button--BN {
   float: right;
@@ -93,23 +95,13 @@
   height: 100%;
 }
 .main {
+  /* $ Main har en klass, enligt BEM $ */
   margin-left: var(--sidebar-width);
+  /* $ marginleft gör att main börjar bredvid sidebar $ */
 }
 .message-unfinished {
   font-family: Comfortaa, sans-serif;
   text-align: center;
-}
-#mobile-navigation-error-message-div {
-  background-color: #e3397a;
-  border-radius: 1em;
-  font-size: 1.3em;
-  height: auto;
-    width: auto;
-  margin: 40vh 20vw;
-  overflow: auto;
-  padding: 2em;
-  position: static;
-    left: auto;
 }
 #mobile-navigation-main-content {
 	display: none;
