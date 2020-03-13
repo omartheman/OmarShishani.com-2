@@ -3,6 +3,7 @@
 /* $ Use regex to replace comments with space, then use \n to find and remove newlines $ */
 
 :root {
+/* $ Variabler underlättar element samspel, särskilt för float $ */
   --body-background-color: white;
   --header__subheading-margin-left: 1.5em;
   --margin-home_reload-700plus: 25vw;
@@ -55,12 +56,13 @@
   width: calc(100% - var(--sidebar-width));
 }
 .header__subheading {
+/* $ Användning av BEM. Header är block, subheading är element $ */
   float: left;
   font: 1.5em source_sans_proregular, sans-serif;
   margin-left: var(--header__subheading-margin-left);
   width: calc(100% - var(--profile-pic-width) + 4.6em - var(--profile-pic-padding)*2 - var(--header__subheading-margin-left));
 }
-.header__heading-homepage {
+.header__heading--homepage {
   margin-left: 1em;
   float: left;
   font-family: Comfortaa, 'Century Gothic 600', sans-serif;
@@ -390,7 +392,7 @@
   }
 }
 @media (max-width: 650px) {
-  .header__heading-homepage {
+  .header__heading--homepage {
     float: none;
     margin: 0.5em auto 0 1em;
     text-align: left;
