@@ -30,8 +30,8 @@ const sidebar = String.raw`
 const footer = String.raw`
 <footer class="footer">
   <span><a href="https://www.linkedin.com/in/omar-shishani-school/" target="_blank">LinkedIn</a></span>
-  <span><a href="https://github.com/crazy-hobo" target="_blank">Github</a></span>
   <span><a href="https://www.instructables.com/member/omarshishanischool/" target="_blank">Instructables</a></span>
+  <span><a href="https://github.com/crazy-hobo" target="_blank">Github</a></span>
 </footer>
 `;
 
@@ -52,9 +52,9 @@ const mobileNav = String.raw`
   <div class="navbar-hamburger-bun"></div>
   <div class="navbar-hamburger-bun"></div>
 </div>
-<!-- <video autoplay muted loop id="myVideo">
+<video autoplay muted loop id="myVideo">
   <source src="waves3.0.mp4" type="video/mp4">
-</video> -->
+</video>
 `;
 
 document.querySelector('header').insertAdjacentHTML('afterend', sidebar);
