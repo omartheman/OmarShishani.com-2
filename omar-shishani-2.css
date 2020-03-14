@@ -331,6 +331,7 @@
   width: calc(100% - 4rem);
 }
 .text-main__text--ps {
+  width: calc(100% - 1rem);
 }
 .text-main__text--resp-web {
   clear: both;
@@ -514,6 +515,9 @@
   .text-main__content {
    /* $ UL listor blir för utspridda vid mobil bredd. här minskar vi padding för att kompaktera $ */
     padding: 1rem 1rem 1rem 2rem;
+  }
+  .text-main__text--web-prog {
+    width: 100%;
   }
 }
 @media (max-width: 450px) {
