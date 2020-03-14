@@ -16,6 +16,8 @@
   font-size: 16px;
 }
 .animation--1 {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0 0 10px 0;
   float: left;
   margin-bottom: 5rem;
 }
@@ -212,8 +214,6 @@
 .reload-button {
   font-family: Comfortaa, 'Century Gothic 600', sans-serif; 
   overflow: auto;
-}
-.reload-button--position {
   display: block;
   margin: auto;
   text-align: center;
