@@ -220,17 +220,16 @@
   display: block;
   margin: auto auto 0.2rem;
 }
-.sidebar__button--animations {
-  margin-bottom: 0;
-}
 .sidebar__link {
 /* $ text-decoration tas bort för att göra länkarna finare $ */
+  display: block;
   color: #8300cc;
-  text-align: center;
-  text-decoration: none;
   font-family: Comfortaa, 'Century Gothic 600', sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
+  margin-bottom: 1em;
+  text-align: center;
+  text-decoration: none;
 }
 .sidebar__link:visited {
   color: #8300cc;
@@ -239,30 +238,30 @@
 .sidebar__animations-object {
   pointer-events: none; 
 }
-.sidebar__link-animations-wrapper:hover .star-big-upper-left {
+.sidebar__link--animations:hover .star-big-upper-left {
   animation: fade_flash var(--star-flash-duration) infinite;
 }
-.sidebar__link-animations-wrapper:hover .star-big-upper-right {
+.sidebar__link--animations:hover .star-big-upper-right {
   animation: fade_flash var(--star-flash-duration) infinite;
   animation-delay: 0.2s;
 }
-.sidebar__link-animations-wrapper:hover .star-big-lower {
+.sidebar__link--animations:hover .star-big-lower {
   animation: fade_flash var(--star-flash-duration) infinite;
   animation-delay: 0.1s;
 }
-.sidebar__link-animations-wrapper:hover .star-small-lower-left {
+.sidebar__link--animations:hover .star-small-lower-left {
   animation: fade_flash var(--star-flash-duration) infinite;
   animation-delay: 0.3s;
 }
-.sidebar__link-animations-wrapper:hover .star-small-upper-left {
+.sidebar__link--animations:hover .star-small-upper-left {
   animation: fade_flash var(--star-flash-duration) infinite;
   animation-delay: 0.1s;
 }
-.sidebar__link-animations-wrapper:hover .star-small-upper-right {
+.sidebar__link--animations:hover .star-small-upper-right {
   animation: fade_flash var(--star-flash-duration) infinite;
   animation-delay: 0.4s;
 }
-.sidebar__link-animations-wrapper:hover .star-small-lower-right {
+.sidebar__link--animations:hover .star-small-lower-right {
   animation: fade_flash var(--star-flash-duration) infinite;
   animation-delay: 0s;
 }
@@ -290,6 +289,10 @@
   height: 20rem;
   margin: 0;
   padding: 2rem 2rem 2rem 4rem;
+}
+.text-main__icon--ps {
+  height: 3rem;
+  width: 3rem;
 }
 .text-main__title {
   margin: auto;
