@@ -4,7 +4,6 @@
 
 :root {
 /* $ Variabler underlättar element samspel, särskilt för float $ */
-  --block-text-main-padding: 2rem;
   --body-background-color: white;
   --header__subheading-margin-left: 1.5em;
   --margin-home_reload-700plus: 25vw;
@@ -14,25 +13,7 @@
   --profile-pic-width: 14em;
   --sidebar-width: 10em;
   --star-flash-duration: 0.7s;
-}
-.block-text-main-1 {
-  background-color: #e0ade6ba;
-  border-radius: 10px;
-  height: 20rem;
-  float: left;
-  margin: 1rem 0.5rem 1rem 1rem;
-  padding: var(--block-text-main-padding);
-  width: 20rem; 
-  width: calc(50% - 1.5rem - 2*(var(--block-text-main-padding)));
-}
-.block-text-main-2 {
-  background-color: #e0ade1ba;
-  border-radius: 10px;
-  height: 20rem;
-  float: right;
-  margin: 1rem 1rem 1rem 0.5rem;
-  padding: var(--block-text-main-padding);
-  width: calc(50% - 1.5rem - 2*(var(--block-text-main-padding))); 
+  font-size: 16px;
 }
 .BN-button-container {
   margin: auto;
@@ -81,7 +62,7 @@
 .header__subheading {
 /* $ Användning av BEM. Header är block, subheading är element $ */
   float: left;
-  font: 1.5em source_sans_proregular, sans-serif;
+  font: 1.5rem source_sans_proregular, sans-serif;
   margin-left: var(--header__subheading-margin-left);
   width: calc(100% - var(--profile-pic-width) + 4.6em - var(--profile-pic-padding)*2 - var(--header__subheading-margin-left));
 }
@@ -136,7 +117,7 @@
 }
 #mobile-navigation-title {
   padding: 0.5em;
-  font-size: 1.3em;
+  font-size: 1.3rem;
 }
 #myVideo {
   position: fixed;
@@ -280,7 +261,7 @@
   animation-delay: 0s;
 }
 .sidebar__link--font {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 .s-plain {
   display: none;
@@ -290,6 +271,26 @@
 /* Enligt BEM, modifiern BN får sin egen selektor, för att den är annorlounda än andra h2-subheadings skulle vara */
   text-align: center;
   clear: both;
+}
+.text-main {
+  float: left;
+  margin: 5rem 0.5rem 1rem 1rem;
+  width: calc(50% - 1.5rem);
+}
+.text-main--2 {
+  margin: 5rem 1rem 1rem 0.5rem;
+}
+.text-main__content {
+  background-color: #e0ade6ba;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  height: 20rem;
+  margin: 0;
+  padding: 2rem 2rem 2rem 4rem;
+}
+.text-main__title {
+  margin: auto;
+  text-align: center;
 }
 .welcome-text {
 	line-height: 2em;
@@ -320,6 +321,17 @@
          url('fonts/sourcesanspro-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+@media (max-width: 1000px) {
+/* $ Denna Media query är här för att stapla textrutorna .text-main ovanför varandra när det blir för trångt $ */
+  .text-main {
+    float: left;
+    margin: 3rem 0.5rem 1rem 1rem;
+    width: calc(100% - 2rem);
+  }
+  .text-main--2 {
+    margin: 3rem 1rem 1rem 1rem;
+  }
 }
 @media (max-width: 700px) {
 /* $ Vid 700px tar sidebar upp för mycket rum på skärmen. Dags att byta till dropdown nav meny $ */
