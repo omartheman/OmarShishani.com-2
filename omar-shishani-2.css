@@ -91,7 +91,7 @@
   overflow: auto;
 }
 .intro {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   clear: both;
   padding: 1em 2em 1em 2em;
 }
@@ -306,8 +306,11 @@
   width: 3rem;
 }
 .text-main__title {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px 5px 0 0;
   margin: auto;
   text-align: center;
+  width: 50%;
 }
 .welcome-text {
 	line-height: 2em;
