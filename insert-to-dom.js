@@ -46,7 +46,7 @@ const mobileNav = String.raw`
 `;
 
 document.querySelector('header').insertAdjacentHTML('afterend', sidebar);
-document.querySelector('#omarJavascript').insertAdjacentHTML('beforebegin', footer);
+document.querySelector('main').insertAdjacentHTML('afterend', footer);
 
 const main = document.querySelector('main');
 main.insertAdjacentHTML('beforeend', mobileNav);
