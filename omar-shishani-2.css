@@ -212,11 +212,12 @@
   width: var(--profile-pic-width);
 }
 .reload-button {
-  font-family: Comfortaa, 'Century Gothic 600', sans-serif; 
-  overflow: auto;
   display: block;
+  font-family: Comfortaa, 'Century Gothic 600', sans-serif; 
   margin: auto;
+  overflow: auto;
   text-align: center;
+  text-decoration: none;
   width: 10rem;
 }
 .sidebar {

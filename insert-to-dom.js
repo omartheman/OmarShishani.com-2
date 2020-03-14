@@ -52,9 +52,6 @@ const mobileNav = String.raw`
   <div class="navbar-hamburger-bun"></div>
   <div class="navbar-hamburger-bun"></div>
 </div>
-<video autoplay muted loop id="myVideo">
-  <source src="waves3.0.mp4" type="video/mp4">
-</video>
 `;
 
 document.querySelector('header').insertAdjacentHTML('afterend', sidebar);

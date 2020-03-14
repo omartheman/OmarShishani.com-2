@@ -1,6 +1,7 @@
+movies
 *.png
 *.mp4
 *.otf
 *.jpg
-movies
+*.mov
 
