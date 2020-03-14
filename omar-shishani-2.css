@@ -97,6 +97,8 @@
 }
 .main {
   /* $ Main har en klass, enligt BEM $ */
+  clear: both;
+  /* $ På Brittany animation ger brittany h1 en margin på toppen av html dokumentet utan clear:both på main $ */
   margin-left: var(--sidebar-width);
   /* $ marginleft gör att main börjar bredvid sidebar $ */
 }
