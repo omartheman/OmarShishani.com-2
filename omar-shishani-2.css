@@ -308,6 +308,7 @@
   float: left;
 }
 .text-main__icon--illus {
+  clear: right;
 }
 .text-main__icon--js {
   float: right;
@@ -315,8 +316,15 @@
 .text-main__icon--ps {
   float: right;
   height: 3rem;
-  margin-bottom: 0.3rem;
+  margin: 0.4rem 0 0.3rem;
   width: 3rem;
+}
+.text-main__list-nested {
+  padding: 0 0 0 0.8rem;
+}
+.text-main__list-itm--photo-man {
+  float: left;
+  width: calc(100% - 3.2rem);
 }
 .text-main__text {
   float: left;
@@ -498,9 +506,31 @@
     float: left;
     margin: 0.3rem 0;
   }
+  /* $ HTML css js ikoner tar upp för mycket plats på mindre skärmer. Denna query gör att dom bryter rad till under texten $ */
   .text-main__icon--js {
     float: left;
     margin: 0.44rem 0 0 0.3rem;
+  }
+  .text-main__content {
+   /* $ UL listor blir för utspridda vid mobil bredd. här minskar vi padding för att kompaktera $ */
+    padding: 1rem 1rem 1rem 2rem;
+  }
+}
+@media (max-width: 450px) {
+  .text-main__icon--illus {
+    float: left;
+    margin: 0.2rem;
+  }
+  .text-main__icon--ps {
+    clear: left;
+    float: left;
+    margin: 0.2rem;
+  }
+  .text-main__text--ps {
+    width: 100%;
+  }
+  .text-main__title {
+    width: 80%;
   }
 }
 @media (min-aspect-ratio: 16/9) {
