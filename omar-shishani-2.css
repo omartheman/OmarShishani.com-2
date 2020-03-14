@@ -307,12 +307,15 @@
 .text-main__icon--html-css {
   float: left;
 }
+.text-main__icon--illus {
+}
 .text-main__icon--js {
   float: right;
 }
 .text-main__icon--ps {
   float: right;
   height: 3rem;
+  margin-bottom: 0.3rem;
   width: 3rem;
 }
 .text-main__text {
