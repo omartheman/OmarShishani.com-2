@@ -101,7 +101,7 @@
   /* $ marginleft gör att main börjar bredvid sidebar $ */
 }
 .message-unfinished {
-  font-family: Comfortaa, sans-serif;
+  font-family: Comfortaa, 'Century Gothic 600', sans-serif;
   text-align: center;
 }
 #mobile-navigation-main-content {
@@ -172,7 +172,7 @@
   height: 0px;
 }
   #navbar-mobile a {
-    font-family: 'Comfortaa', sans-serif;
+    font-family: Comfortaa, 'Century Gothic 600', sans-serif;
   }
 #navbar-mobile-featured {
   position: absolute;
@@ -204,7 +204,7 @@
   width: var(--profile-pic-width);
 }
 .reload-button {
-  font-family: Comfortaa, sans-serif; 
+  font-family: Comfortaa, 'Century Gothic 600', sans-serif; 
   overflow: auto;
 }
 .reload-button--position {
@@ -216,19 +216,25 @@
   position: fixed;
   width: var(--sidebar-width);
 }
+.sidebar__button {
+  display: block;
+  margin: auto auto 0.2rem;
+}
+.sidebar__button--animations {
+  margin-bottom: 0;
+}
 .sidebar__link {
 /* $ text-decoration tas bort för att göra länkarna finare $ */
   color: #8300cc;
+  text-align: center;
   text-decoration: none;
+  font-family: Comfortaa, 'Century Gothic 600', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 .sidebar__link:visited {
   color: #8300cc;
   text-decoration: none;
-}
-.sidebar__link-animations-wrapper {
-  font-family: Comfortaa, sans-serif;
-  font-weight: 600;
-  text-align: center; 
 }
 .sidebar__animations-object {
   pointer-events: none; 
@@ -259,9 +265,6 @@
 .sidebar__link-animations-wrapper:hover .star-small-lower-right {
   animation: fade_flash var(--star-flash-duration) infinite;
   animation-delay: 0s;
-}
-.sidebar__link--font {
-  font-size: 1.5rem;
 }
 .s-plain {
   display: none;
