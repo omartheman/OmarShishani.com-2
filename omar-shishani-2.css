@@ -299,6 +299,9 @@
   margin: 0;
   padding: 2rem 2rem 2rem 4rem;
 }
+.text-main__icon--js {
+  float: right;
+}
 .text-main__icon--ps {
   float: right;
   height: 3rem;
