@@ -1,16 +1,36 @@
+
+/* $ Regex for finding comments: \/\*\$.+\$\*\/ --- $ */
+/* $ Use regex to replace comments with space, then use \n to find and remove newlines $ */
+
 :root {
-	--body-background-color: white;
+/* $ Variabler underlättar element samspel, särskilt för float $ */
+  --body-background-color: white;
+  --header__subheading-margin-left: 1.5em;
   --margin-home_reload-700plus: 25vw;
+  --os-border-color: black;
   --OS-logo-color: #4b4545;
+  --profile-pic-padding: 1em;
+  --profile-pic-width: 14em;
   --sidebar-width: 10em;
   --star-flash-duration: 0.7s;
+  font-size: 16px;
+}
+.animation--1 {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0 0 10px 0;
+  float: left;
+  margin-bottom: 5rem;
 }
 .BN-button-container {
   margin: auto;
   width: 20em;
 }
 .body {
+/* $  $ */
+/* $ Enligt BEM är det bättre att använda en class för att selektera body, istället för body selektorn (se processanalys) $ */
   background-color: var(--body-background-color);
+  font-family: source_sans_proregular, sans-serif;
+  /* $ Denna font-family används under class "body" som en default-backup font familj. $ */
   margin: 0;
 }
 .button-style-1 {
@@ -21,52 +41,76 @@
   border-radius: 10px;
   padding: 0.3em;
 }
-.home-button {
-  font-family: Comfortaa, sans-serif;
+.footer {
+  background-color: #e0ade6ba;
+  display: flex;
+    align-items: center;
+    justify-content: space-around;
+  font-family: source_sans_probold;
+  height: 4em;
+  margin-left: var(--sidebar-width);
+  width: calc(100% - var(--sidebar-width));
+  bottom: 0;
 }
-.home-button--position {
+  .footer a {
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+    padding: 3px;
+    text-decoration: none;
+  }
+.header {
+  background-color: #e0ade6ba;
+  float: right;
+  margin-left: var(--sidebar-width);
+  width: calc(100% - var(--sidebar-width));
+}
+.header__subheading {
+/* $ Användning av BEM. Header är block, subheading är element $ */
+  float: left;
+  font: 1.5rem source_sans_proregular, sans-serif;
+  margin-left: var(--header__subheading-margin-left);
+  width: calc(100% - var(--profile-pic-width) + 4.6em - var(--profile-pic-padding)*2 - var(--header__subheading-margin-left));
+}
+.header__heading--homepage {
+/* $ BEM: homepage är modifier $ */
+  margin-left: 1em;
+  float: left;
+  font-family: Comfortaa, 'Century Gothic 600', sans-serif;
+  /* $ Väljer Century Gothic som backup, för att den är lik Comfortaa $ */
+  width: calc(100% - var(--profile-pic-width)/2 - var(--profile-pic-padding)*2);
+  /* $ Att kalkylera width gör det lättare att ändra storlek av andra element, utan att behöva ända värden i flera selektorer $ */
+}
+.heading {
+  font-family: Comfortaa, 'Century Gothic 600', sans-serif;
+  margin-left: 1em;
+}
+.home-button {
+  font-family: Comfortaa, 'Century Gothic 600', sans-serif;
+}
+.home-button--BN {
   float: right;
   overflow: auto;
 }
-.h1 {
-	font-family: Comfortaa, 'Century Gothic 600', sans-serif;
-	text-align: center;
-}
-.h2 {
-  font-family: Comfortaa, sans-serif;
-}
-.h2--position {
-  text-align: center;
-}
-.h2--clear-both {
-  clear: both;
-}
 .intro {
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 0.1em 2em 1em 2em;
+  background-color: rgba(255, 255, 255, 0.8);
+  clear: both;
+  padding: 1em 2em 1em 2em;
 }
 .jewel-svg {
   max-width: 100%;
   height: 100%;
 }
 .main {
+  /* $ Main har en klass, enligt BEM $ */
+  clear: both;
+  /* $ På Brittany animation ger brittany h1 en margin på toppen av html dokumentet utan clear:both på main $ */
   margin-left: var(--sidebar-width);
+  /* $ marginleft gör att main börjar bredvid sidebar $ */
 }
 .message-unfinished {
-  font-family: Comfortaa, sans-serif;
+  font-family: Comfortaa, 'Century Gothic 600', sans-serif;
   text-align: center;
-}
-#mobile-navigation-error-message-div {
-  background-color: #e3397a;
-  border-radius: 1em;
-  font-size: 1.3em;
-  height: auto;
-    width: auto;
-  margin: 40vh 20vw;
-  overflow: auto;
-  padding: 2em;
-  position: static;
-    left: auto;
 }
 #mobile-navigation-main-content {
 	display: none;
@@ -81,9 +125,9 @@
 }
 #mobile-navigation-title {
   padding: 0.5em;
-  font-size: 1.3em;
+  font-size: 1.3rem;
 }
-#myVideo {
+.myVideo {
   position: fixed;
   left: 0;
   top: 0;
@@ -93,6 +137,7 @@
   z-index: -1;
 }
 #navbar-hamburger {
+/* $ Kod för hamburger gömmer dropdown-menyn  när skärmen är under en viss storlek $ */
   border: 0.1em solid black;
   border-radius: 10px;
   height: 0px;
@@ -135,7 +180,7 @@
   height: 0px;
 }
   #navbar-mobile a {
-    font-family: 'Comfortaa', sans-serif;
+    font-family: Comfortaa, 'Century Gothic 600', sans-serif;
   }
 #navbar-mobile-featured {
   position: absolute;
@@ -146,8 +191,9 @@
 }
 .os-v2-svg {
   display: inline-block;
-  margin: auto;
-  transform: scale(0.8);
+  height: 8em;
+  margin: auto auto 2em;;
+  width: 8em;
 }
 .os-v2-container {
   text-align: center; 
@@ -155,14 +201,24 @@
 .o-plain {
   display: none;
   animation: rainbow_svg_fill infinite 16s linear;
-  stroke: #c3c3c3;
+  stroke: var(--os-border-color);
+}
+.profile-pic {
+  border-radius: 100%;
+  display: block;
+  float: right;
+  height: var(--profile-pic-width);
+  padding: 1em;
+  width: var(--profile-pic-width);
 }
 .reload-button {
-  font-family: Comfortaa, sans-serif; 
+  display: block;
+  font-family: Comfortaa, 'Century Gothic 600', sans-serif; 
+  margin: auto;
   overflow: auto;
-}
-.reload-button--position {
-  float: left;
+  text-align: center;
+  text-decoration: none;
+  width: 10rem;
 }
 .sidebar {
   background-color: lightgrey;
@@ -170,56 +226,100 @@
   position: fixed;
   width: var(--sidebar-width);
 }
-  .sidebar a {
-    text-decoration: none;
-    color: #8300cc;
-  }
+.sidebar__button {
+  display: block;
+  margin: auto auto 0.2rem;
+}
+.sidebar__link {
+/* $ text-decoration tas bort för att göra länkarna finare $ */
+  display: block;
+  color: #8300cc;
+  font-family: Comfortaa, 'Century Gothic 600', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1em;
+  text-align: center;
+  text-decoration: none;
+}
+.sidebar__link:visited {
+  color: #8300cc;
+  text-decoration: none;
+}
 .sidebar__animations-object {
   pointer-events: none; 
 }
-.sidebar__link-animations {
-  font-family: Comfortaa, sans-serif;
-  font-weight: 600;
-  text-align: center; 
-}
-.sidebar__link-animations:hover .star-big-upper-left {
+.sidebar__link--animations:hover .star-big-upper-left {
   animation: fade_flash var(--star-flash-duration) infinite;
 }
-.sidebar__link-animations:hover .star-big-upper-right {
+.sidebar__link--animations:hover .star-big-upper-right {
   animation: fade_flash var(--star-flash-duration) infinite;
   animation-delay: 0.2s;
 }
-.sidebar__link-animations:hover .star-big-lower {
+.sidebar__link--animations:hover .star-big-lower {
   animation: fade_flash var(--star-flash-duration) infinite;
   animation-delay: 0.1s;
 }
-.sidebar__link-animations:hover .star-small-lower-left {
+.sidebar__link--animations:hover .star-small-lower-left {
   animation: fade_flash var(--star-flash-duration) infinite;
   animation-delay: 0.3s;
 }
-.sidebar__link-animations:hover .star-small-upper-left {
+.sidebar__link--animations:hover .star-small-upper-left {
   animation: fade_flash var(--star-flash-duration) infinite;
   animation-delay: 0.1s;
 }
-.sidebar__link-animations:hover .star-small-upper-right {
+.sidebar__link--animations:hover .star-small-upper-right {
   animation: fade_flash var(--star-flash-duration) infinite;
   animation-delay: 0.4s;
 }
-.sidebar__link-animations:hover .star-small-lower-right {
+.sidebar__link--animations:hover .star-small-lower-right {
   animation: fade_flash var(--star-flash-duration) infinite;
   animation-delay: 0s;
 }
-.sidebar__link--font {
-  font-size: 1.5em;
-}
 .s-plain {
   display: none;
-  stroke: #c3c3c3;
+  stroke: var(--os-border-color);
+}
+.subheading-1--BN {
+/* Enligt BEM, modifiern BN får sin egen selektor, för att den är annorlounda än andra h2-subheadings skulle vara */
+  clear: both;
+  padding: 0 1em;
+  text-align: center;
+}
+.text-main {
+  float: left;
+  margin: 5rem 0.5rem 1rem 1rem;
+  width: calc(50% - 1.5rem);
+}
+.text-main--2 {
+  margin: 5rem 1rem 1rem 0.5rem;
+}
+.text-main__content {
+  background-color: #e0ade6d5;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  margin: 0;
+  padding: 2rem 2rem 2rem 4rem;
+}
+.text-main__icon--js {
+  float: right;
+}
+.text-main__icon--ps {
+  float: right;
+  height: 3rem;
+  width: 3rem;
+}
+.text-main__title {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px 5px 0 0;
+  margin: auto;
+  text-align: center;
+  width: 50%;
 }
 .welcome-text {
-	line-height: 1.8em;
+	line-height: 2em;
 }
 @font-face {
+/* $ Comfortaa inkluderas som en font-face, ifall Google Fonts länk fungerar inte $ */
     font-family: 'Comfortaa';
     src: url('fonts/comfortaa-variablefont_wght-webfont.woff2') format('woff2'),
          url('fonts/comfortaa-variablefont_wght-webfont.woff') format('woff');
@@ -231,7 +331,42 @@
       src: local('Century Gothic');
       font-weight: 500;
 }
+@font-face {
+    font-family: 'source_sans_probold';
+    src: url('fonts/sourcesanspro-bold-webfont.woff2') format('woff2'),
+         url('fonts/sourcesanspro-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('fonts/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@media (max-width: 1000px) {
+/* $ Denna Media query är här för att stapla textrutorna .text-main ovanför varandra när det blir för trångt $ */
+  .text-main {
+    float: left;
+    margin: 3rem 0.5rem 1rem 1rem;
+    width: calc(100% - 2rem);
+  }
+  .text-main--2 {
+    margin: 3rem 1rem 1rem 1rem;
+  }
+}
 @media (max-width: 700px) {
+/* $ Vid 700px tar sidebar upp för mycket rum på skärmen. Dags att byta till dropdown nav meny $ */
+  .footer {
+  /* $ Footer ges en media query för göra att den tar upp hela skärmen efter media queryn $ */
+    margin-left: 0;
+    width: 100%;
+    /* $ Margin-left och width förändras till 0 och 100% när sidebar försvinnner, annars lämnar dom öppen rum var sidebar var $ */
+  }
+  .header {
+    width: 100%;
+  }
   .main {
     margin-left: 0;
   }
@@ -262,9 +397,8 @@
   }
   .sidebar {
     display: none;
+    /* $ Display:none tar bort elementet från dokumentflödet. Dock kan inga med screen-reader se elementet i koden heller. $ */
   }
-}
-@media (max-width: 700px) {
   #navbar-2-mobile-navigation-page {
     background-color: #f07fe6; 
     display: flex;
@@ -313,6 +447,24 @@
     text-align: center;
     padding: 1rem;
     font-size: 1.7rem;
+  }
+}
+@media (max-width: 650px) {
+/* $ Vid 650px krockar profilbilden och h1. följande selektorer åtgärder detta $ */
+  .header__heading--homepage {
+    float: none;
+    margin: 0.5em auto 0 1em;
+    text-align: left;
+    width: calc(100% - 2.8em);
+  }
+  .header__subheading {
+    float: none;
+    margin: auto 1em 1em;
+    width: calc(100% - 2em);
+  }
+  .profile-pic {
+    margin: auto;    
+    float: none;
   }
 }
 @media (min-aspect-ratio: 16/9) {

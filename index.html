@@ -1,59 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- $ Viewport meta för att göra så browsern inte försökar använda automatisk anpassning till mobil storlek $ -->
 	<link rel="stylesheet" type="text/css" href="omar-shishani-2.css">
 	<link rel="stylesheet" media="(max-width: 450px)" href="max-450px.css">
   <script src="jquery-3.4.1.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
-	<title></title>
+	<title>Omar Shishani</title>
 </head>
 	<body class="body">
-		<aside class="sidebar">
-			<a href="brittanys-logo-60fps/BN.html">
-				<div class="sidebar__link-animations">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.458 26.458" height="100" width="100">
-						<g transform="translate(0 -270.542)"><circle r="12.548" cy="283.817" cx="13.245" stroke="#000" stroke-width=".864" stroke-linecap="round" fill="none"/><path class="star-big-upper-right" d="M15.38 281.58c2.176-1.054 1.979-3.528 2.77-5.543.697 2.267.792 4.638 2.77 5.543-2.459 1.781-1.998 3.311-2.77 5.543-.838-2.703-.285-4.14-2.77-5.543z" fill="#fc0" fill-opacity=".834" stroke="#000" stroke-width=".249"/><path class="star-big-lower" d="M13.69 285.324c-.446 1.821-.214 2.768-2.303 4.254 2.21 1.487 1.508 2.515 2.303 4.253.893-1.778.458-3.253 2.303-4.253-2.09-1.327-1.727-2.557-2.303-4.254z" fill="#ff0080" stroke="#000" stroke-width=".249"/><path class="star-small-lower-left" d="M6.95 287.107c.803-.388.73-1.3 1.021-2.043.258.835.293 1.71 1.022 2.043-.907.657-.737 1.221-1.022 2.044-.308-.996-.104-1.526-1.02-2.044z" fill="#f0f" fill-opacity=".451" stroke="#000" stroke-width=".249"/><path class="star-small-upper-right" d="M13.79 275.74c.803-.389.73-1.301 1.022-2.044.257.836.292 1.71 1.02 2.044-.905.656-.736 1.22-1.02 2.043-.31-.996-.105-1.526-1.022-2.043z" fill="#f0f" fill-opacity=".451" stroke="#000" stroke-width=".249"/><path class="star-small-lower-right" d="M18.103 288.952c.667-.323.607-1.082.85-1.7.213.695.242 1.422.85 1.7-.755.546-.614 1.016-.85 1.7-.258-.829-.088-1.27-.85-1.7z" fill="#ff0052" stroke="#000" stroke-width=".249"/><path class="star-small-upper-left" d="M5.189 280.293c-.192.712-.107 1.05-1.104 1.637 1.155.618.753.982 1.104 1.636.44-.693.258-1.282 1.104-1.636-1.002-.51-.828-.984-1.104-1.637z" fill="#fc0" fill-opacity=".834" stroke="#000" stroke-width=".249"/></g><path class="star-big-upper-left" d="M12.464 9.06c-1.539-1.184-1.642-2.847-2.147-4.376C9.95 6.54 9.423 8.214 8.17 9.06c1.597.966 1.481 2.89 2.147 4.376.702-1.462.48-3.141 2.147-4.376z" fill="#ff0052" stroke="#000" stroke-width=".249"/>
-					</svg>
-					<div class="sidebar__link--font">
-						Animations
-					</div>
-				</div>
-			</a>
-		</aside>
+		<header class="header">
+		<!-- $ Elementet <header> används för bättre semantik $ -->
+			<h1 class="header__heading--homepage">
+				<span class="welcome-text">Welcome.</span> My&nbsp;name&nbsp;is Omar&nbsp;Shishani.
+				<!-- $ <span> och nbsp används för att göra <h1> ordplaceringen få en finare komposition i olika skärmstorlekar (se processanalys) $ -->
+			</h1>
+			<img class="profile-pic" src="omar-3.jpg" alt="Profile Picture">	
+			<h2 class="header__subheading">I am a web developer based in Pleasant Hill, California.</h2>
+		</header>
 
 		<main class="main">
-			<div class="os-v2-container">
-				<svg class="os-v2-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 48" height="48mm" width="75mm"><path class="s-plain" d="M66.21 18.326c6.386.824 6.763 4.935 6.772 7.428v13.649c-.563 4.867-3.649 6.296-6.763 6.628h-29.92c6.444-3.336 9.927-7.608 11.911-12.352h13.595c3.106-.138 2.755-4.405-.007-4.412H49.446c2.426-7.987-.96-21.887-12.706-26.823h31.5c7.181.686 6.388 10.998.001 11.559H56.593c-1.98.018-2.725 3.889 0 4.323z" fill="#818181" stroke="#000" stroke-width="1.058"/><path class="o-plain" d="M24.696 1.67A22.362 22.362 0 002.334 24.03a22.362 22.362 0 0022.362 22.363A22.362 22.362 0 0047.057 24.03 22.362 22.362 0 0024.696 1.669zm.168 18.589a3.618 3.618 0 013.617 3.617 3.618 3.618 0 01-3.617 3.618 3.618 3.618 0 01-3.618-3.618 3.618 3.618 0 013.618-3.617z" fill="#fe0000" stroke="#000" stroke-width="1.058" stroke-linecap="round"/></svg>
-			</div> <!-- <div class="os-v2--container"> -->
+		<!-- $ Main grupperar huvudinnehållet $ -->
 			<div class="intro">
-				<h1 class="h1">
-					<span class="welcome-text">Welcome.</span> My&nbsp;name&nbsp;is Omar&nbsp;Shishani.
-				</h1>	
-				<h2 class="message-unfinished">This website is in the works. All that exists right now is this logo animation.😛</h2>
-				<h2 class="message-unfinished">See also <a href="brittanys-logo-60fps/BN.html">this awesome logo animation</a> I created for someone special.</h2>
+				<h2 class="message-unfinished">Together we can create a site to attract your audience.</h2>
 			</div> <!--div class="intro" -->
-			<div id="navbar-hamburger"> 
-				<div class="navbar-hamburger-bun"></div>
-				<div class="navbar-hamburger-bun"></div>
-				<div class="navbar-hamburger-bun"></div>
-			</div>
-			<div id="mobile-navigation-main-content">
-				<nav id="navbar-mobile">
-					<a href="index.html">
-						Home
-					</a>
-					<a href="brittanys-logo-60fps/BN.html">
-						Animations
-					</a>
-				</nav> <!-- <nav id="navbar-3"> -->
-			</div> <!-- <div id="mobile-navigation-main-content"> -->
-			<video autoplay muted loop id="myVideo">
+			<!-- $  $ -->
+			<!-- $ Jag använder kommentarer på slutet av stora divs, för att veta vilken div som det är som ligger ovanför. Detta är bra när man läser koden under, eller har flera divs staplade på varandra $ -->
+			<div class="text-main">
+				<h2 class="text-main__title">What I can offer you.</h2>	
+				<ul class="text-main__content">
+					<li>
+						<strong>Total control.</strong>
+						<ul>
+							<li>	
+								Sites designed and coded from scratch, allowing you complete customization.
+							</li>
+						</ul>
+					</li>
+					<li>
+						<strong>Cheap Hosting</strong>
+						<ul>
+							<li>
+								Coding from scratch bypasses reliance upon content management systems like Wordpress or Wix, making your hosting cost as low as $4.00 a month.
+							</li>
+						</ul>
+					</li>
+					<li>
+						<strong>Photo Manipulation</strong>
+						<ul>
+							<li>Creation, editing, or enhancement of your chosen images, using Adobe Photoshop and Illustrator.
+								<svg class="text-main__icon--ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 234">
+									<path d="M197.5 234h-155C19 234 0 215 0 191.5v-149C0 19 19 0 42.5 0h155C221 0 240 19 240 42.5v149c0 23.5-19 42.5-42.5 42.5z" fill="#26c9ff"/><path d="M193.7 224H46.3c-20 0-36.3-16.3-36.3-36.4V46.4C10 26.3 26.3 10 46.3 10h147.3c20.1 0 36.3 16.3 36.3 36.3v141.3c.1 20.1-16.2 36.4-36.2 36.4z" fill="#062026"/><path d="M58 54.8c0-.7 1.4-1.2 2.2-1.2 6.4-.3 15.9-.5 25.8-.5 27.7 0 38.5 15.2 38.5 34.7 0 25.4-18.4 36.3-41 36.3-3.8 0-5.1-.2-7.8-.2v38.4c0 .8-.3 1.2-1.2 1.2H59.2c-.8 0-1.2-.3-1.2-1.2V54.8zm17.8 53.1c2.3.2 4.1.2 8.1.2 11.7 0 22.7-4.1 22.7-20 0-12.7-7.9-19.1-21.2-19.1-4 0-7.8.2-9.6.3v38.6zm86-11.9c-7.9 0-10.6 4-10.6 7.3 0 3.6 1.8 6.1 12.4 11.6 15.7 7.6 20.6 14.9 20.6 25.6 0 16-12.2 24.6-28.7 24.6-8.7 0-16.2-1.8-20.5-4.3-.7-.3-.8-.8-.8-1.6v-14.7c0-1 .5-1.3 1.2-.8 6.3 4.1 13.5 5.9 20.1 5.9 7.9 0 11.2-3.3 11.2-7.8 0-3.6-2.3-6.8-12.4-12-14.2-6.8-20.1-13.7-20.1-25.2 0-12.9 10.1-23.6 27.6-23.6 8.6 0 14.6 1.3 17.9 2.8.8.5 1 1.3 1 2v13.7c0 .8-.5 1.3-1.5 1-4.4-2.8-10.9-4.5-17.4-4.5z" fill="#d9f5ff"/>
+								</svg>
+							</li>	
+						</ul>
+						
+					</li>
+					<li>
+						<strong>Simplicity</strong>
+						<ul>
+							<li>No rigid templates, so we choose only which pieces you need.</li>
+						</ul>
+					</li>
+					<li>
+						<strong>Custom animations.</strong>
+						<ul>
+							<li>
+								From idea to sketch to screen, I can make your artistic ideas come to life on the web.
+							</li>
+						</ul>
+					</li>
+					<li>
+						<strong>Flexibility</strong>
+						<ul>
+							<li>
+								I will find the tools to get the job done.
+							</li>
+						</ul>
+					</li>
+				</ul>	
+			</div> <!-- <div class="block-text-main-1"> -->
+			<div class="text-main text-main--2">
+				<h2 class="text-main__title">My skills</h2>
+				<ul class="text-main__content">
+					<li>
+						<strong>Website Programming</strong> in HTML, CSS, & Javascript
+						<svg class="text-main__icon--js" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px"><path fill="#ffd600" d="M6,42V6h36v36H6z"/><path fill="#000001" d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"/></svg>
+					</li>
+					<li>
+						<strong>Responsive web design</strong> - Each element is customized for appearance in mobile, desktop, and tablet.
+					</li>
+					<li>
+						<strong>Drawing and animating</strong> scalable graphics (as .svg files) using vector graphics programs. (Check out my sidebar buttons, and animations page for example.)
+					</li>
+					<li>Adobe Photoshop / Illustrator / InDesign</li>
+					<li>
+						Database creation using MongoDB / Mongoose
+					</li>
+					<li>
+						Version Control with Git and Github, to easily revert to a past version of site.
+					</li>
+					<li>
+						Node / Express / NPM
+					</li>
+				</ul>
+			</div> <!-- <div class="text-main text-main--2"> -->
+			<video autoplay muted loop class="myVideo">
 				<source src="waves3.0.mp4" type="video/mp4">
 			</video>
-
 		</main>
+		<script src="insert-to-dom.js"></script>
+		<script id="omarJavascript" src="omar-shishani-2.js"></script>
 	</body>
-	<script src="omar-shishani-2.js"></script>
 </html>
