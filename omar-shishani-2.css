@@ -227,6 +227,9 @@
   font-size: 1.5rem;
   text-decoration: none;
 }
+.sidebar__link--process-wrap {
+  margin-top: 2rem;
+}
 .sidebar__link:visited {
   color: #8300cc;
   text-decoration: none;
@@ -281,8 +284,8 @@
   width: calc(50% - 1.5rem);
 }
 .text-main--1-col {
-  background-color: red;
-  margin: 5rem 0.5rem 1rem 1rem;
+  clear: both;
+  margin: 3rem 0.5rem 1rem 1rem;
   width: calc(100% - 2rem);
 }
 .text-main--2 {
