@@ -66,6 +66,11 @@
   margin-left: var(--header__subheading-margin-left);
   width: calc(100% - var(--profile-pic-width) + 4.6em - var(--profile-pic-padding)*2 - var(--header__subheading-margin-left));
 }
+.header__heading {
+  font-family: Comfortaa, 'Century Gothic 600', sans-serif;
+  /* $ Väljer Century Gothic som backup, för att den är lik Comfortaa $ */
+  text-align: center;
+}
 .header__heading--homepage {
 /* $ BEM: homepage är modifier $ */
   margin-left: 1em;
@@ -276,6 +281,11 @@
   float: left;
   margin: 5rem 0.5rem 1rem 1rem;
   width: calc(50% - 1.5rem);
+}
+.text-main--1-col {
+  background-color: red;
+  margin: 5rem 0.5rem 1rem 1rem;
+  width: calc(100% - 2rem);
 }
 .text-main--2 {
   margin: 5rem 1rem 1rem 0.5rem;
