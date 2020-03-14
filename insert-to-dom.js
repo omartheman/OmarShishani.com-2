@@ -42,8 +42,11 @@ const mobileNav = String.raw`
     <a href="index.html">
       Home
     </a>
-    <a href="brittanys-logo-60fps/bn.html">
+    <a href="bn.html">
       Animations
+    </a>
+    <a href="videos.html">
+      Videos
     </a>
   </nav> <!-- <nav id="navbar-3"> -->
 </div> <!-- <div id="mobile-navigation-main-content"> -->

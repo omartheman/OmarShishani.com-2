@@ -300,6 +300,13 @@
   margin: 0;
   padding: 2rem 2rem 2rem 4rem;
 }
+.text-main__icon {
+  float: right;
+  height: 3rem;
+}
+.text-main__icon--html-css {
+  float: left;
+}
 .text-main__icon--js {
   float: right;
 }
@@ -307,6 +314,23 @@
   float: right;
   height: 3rem;
   width: 3rem;
+}
+.text-main__text {
+  float: left;
+  width: calc(100% - 4rem);
+}
+.text-main__text--ps {
+}
+.text-main__text--resp-web {
+  clear: both;
+}
+.text-main__text--web-prog {
+  clear: both;
+  padding-right: 0.7em;
+  width: calc(100% - 9rem);
+}
+.text-main__text--simplicity {
+  clear: both;
 }
 .text-main__title {
   background-color: rgba(255, 255, 255, 0.8);
@@ -466,15 +490,24 @@
     margin: auto;    
     float: none;
   }
+  .text-main__icon--html-css {
+    clear: both;
+    float: left;
+    margin: 0.3rem 0;
+  }
+  .text-main__icon--js {
+    float: left;
+    margin: 0.44rem 0 0 0.3rem;
+  }
 }
 @media (min-aspect-ratio: 16/9) {
-  #myVideo {
+  .myVideo {
     width: 100%;
     height: auto;
   }
 }
 @media (max-aspect-ratio: 16/9) {
-  #myVideo {
+  .myVideo {
     width: auto;
     height: 100%;
   }
