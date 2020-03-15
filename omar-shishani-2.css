@@ -89,6 +89,7 @@
 .header {
   background-color: #e0ade6ba;
   float: right;
+  margin-bottom: 8rem;
   margin-left: var(--sidebar-width);
   width: calc(100% - var(--sidebar-width));
 }
@@ -120,9 +121,10 @@
   overflow: auto;
 }
 .intro {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.5);
   clear: both;
   padding: 1em 2em 1em 2em;
+  margin-bottom: 14rem;
 }
 .jewel-svg {
   max-width: 100%;
@@ -434,6 +436,11 @@
     font-weight: normal;
     font-style: normal;
 }
+@media (max-width: 1200px) {
+  .text-main__title {
+    width: 80%;
+  }
+}
 @media (max-width: 1000px) {
 /* $ Denna Media query är här för att stapla textrutorna .text-main ovanför varandra när det blir för trångt $ */
   .text-main {
@@ -551,6 +558,9 @@
     margin: auto 1em 1em;
     width: calc(100% - 2em);
   }
+  .intro {
+    margin-bottom: 8rem;
+  }
   .profile-pic {
     margin: auto;    
     float: none;
@@ -599,9 +609,6 @@
   }
   .text-main__text--ps {
     width: 100%;
-  }
-  .text-main__title {
-    width: 80%;
   }
 }
 @media (min-aspect-ratio: 16/9) {
