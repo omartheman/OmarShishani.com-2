@@ -320,6 +320,11 @@
 .sidebar__link--home-div {
   font-size: 1.5rem;
 }
+.sidebar__link--vid:hover .sidebar__vid-rec {
+  animation: vid_button forwards 2s;
+}
+.sidebar__vid-rec:hover {
+}
 .s-plain {
   display: none;
   stroke: var(--os-border-color);
@@ -667,4 +672,19 @@
   75%  {fill:blue;}
   91.66%  {fill:purple;}
   100% {fill:red;}
+}
+@keyframes vid_button {
+  from {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+  }
+  50% {
+    stroke-dashoffset: 30px;
+    stroke-dasharray: 15px;
+    fill: rgb(0, 234, 255);
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+  }
 }
