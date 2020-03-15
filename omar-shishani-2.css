@@ -569,7 +569,7 @@
   }
   /* $ HTML css js ikoner tar upp för mycket plats på mindre skärmer. Denna query gör att dom bryter rad till under texten $ */
   .text-main__icon-html-css-js-wrap {
-    float: right;
+    float: left;
   }
   .text-main__icon--js {
     float: left;
