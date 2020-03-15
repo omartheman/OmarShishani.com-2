@@ -89,9 +89,11 @@
 .header {
   background-color: #e0ade6ba;
   float: right;
-  margin-bottom: 8rem;
   margin-left: var(--sidebar-width);
   width: calc(100% - var(--sidebar-width));
+}
+.header--homepage {
+  margin-bottom: 8rem;
 }
 .header__subheading {
 /* $ Användning av BEM. Header är block, subheading är element $ */
@@ -122,9 +124,14 @@
 }
 .intro {
   background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0 100px 100px 0;
   clear: both;
   padding: 1em 2em 1em 2em;
   margin-bottom: 14rem;
+  width: 50%;
+}
+.intro__text {
+  font-family: Comfortaa, 'Century Gothic 600', sans-serif;
 }
 .jewel-svg {
   max-width: 100%;
@@ -136,10 +143,6 @@
   /* $ På Brittany animation ger brittany h1 en margin på toppen av html dokumentet utan clear:both på main $ */
   margin-left: var(--sidebar-width);
   /* $ marginleft gör att main börjar bredvid sidebar $ */
-}
-.message-unfinished {
-  font-family: Comfortaa, 'Century Gothic 600', sans-serif;
-  text-align: center;
 }
 #mobile-navigation-main-content {
 	display: none;
