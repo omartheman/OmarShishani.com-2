@@ -340,6 +340,9 @@
   margin: 0;
   padding: 2rem 2rem 2rem 4rem;
 }
+.text-main__content--section-1 {
+  padding: 2rem 2rem 2rem 2rem;
+}
 .text-main__icon {
   float: right;
   height: 3rem;
@@ -367,6 +370,10 @@
 }
 .text-main__list-itm--section-1 {
   list-style-type: none;
+}
+.text-main__list-itm-nested--section-1 {
+  list-style-type: disc;
+  margin-left: 1em;
 }
 .text-main__list-itm--photo-man {
   float: left;
@@ -548,6 +555,13 @@
     margin: auto;    
     float: none;
   }
+  .text-main__content {
+   /* $ UL listor blir för utspridda vid mobil bredd. här minskar vi padding för att kompaktera $ */
+    padding: 1rem 1rem 1rem 2rem;
+  }
+  .text-main__content--section-1 {
+    padding: 1rem 1rem 1rem 1rem;
+  }
   .text-main__icon--html-css {
     clear: both;
     float: left;
@@ -557,10 +571,6 @@
   .text-main__icon--js {
     float: left;
     margin: 0.44rem 0 0 0.3rem;
-  }
-  .text-main__content {
-   /* $ UL listor blir för utspridda vid mobil bredd. här minskar vi padding för att kompaktera $ */
-    padding: 1rem 1rem 1rem 2rem;
   }
   .text-main__text--web-prog {
     width: 100%;
@@ -576,6 +586,10 @@
     clear: left;
     float: left;
     margin: 0.2rem;
+    padding-bottom: 0.6em;
+  }
+  .text-main__list-itm--photo-man {
+    padding-bottom: 0;
   }
   .text-main__text--ps {
     width: 100%;
