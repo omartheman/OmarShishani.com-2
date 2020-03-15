@@ -358,9 +358,9 @@
 }
 .text-main__icon--ps {
   float: right;
-  height: 3rem;
-  margin: 0.4rem 0 0.3rem;
-  width: 3rem;
+  height: 2.85rem;
+  margin: 0.5rem 0 0.3rem;
+  width: 2.95rem;
 }
 .text-main__list-nested {
   padding: 0 0 0 0.8rem;
@@ -579,14 +579,17 @@
 }
 @media (max-width: 450px) {
   .text-main__icon--illus {
-    float: left;
-    margin: 0.2rem;
+    clear: none;
+    margin: 0.4rem 0 0.3rem;
   }
   .text-main__icon--ps {
+    margin-right: 0.3rem;
     clear: left;
     float: left;
-    margin: 0.2rem;
-    padding-bottom: 0.6em;
+  }
+  .text-main__icon-ps-il-wrap {
+    float: right;
+    /* This wrapper is used to reverse the float order of ps and il icons */
   }
   .text-main__list-itm--photo-man {
     padding-bottom: 0;
