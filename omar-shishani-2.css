@@ -45,8 +45,9 @@
 .container {
   display: grid;
   grid-template-columns: calc(33.33% - var(--vid-grd-col-gap)*2/3) calc(33.33% - var(--vid-grd-col-gap)*2/3) calc(33.33% - var(--vid-grd-col-gap)*2/3);
-  grid-template-rows: 14rem 14rem 14rem;
+  grid-template-rows: 20vw;
   gap: 0 var(--vid-grd-col-gap);
+  padding-top: 2rem;
   margin: auto;
   width: 90%;
 }
