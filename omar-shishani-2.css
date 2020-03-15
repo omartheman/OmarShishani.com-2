@@ -357,6 +357,7 @@
 }
 .text-main__icon--illus {
   clear: right;
+  margin-right: 0.1rem;
 }
 .text-main__icon--js {
   float: right;
@@ -365,7 +366,7 @@
   float: right;
   height: 2.85rem;
   margin: 0.5rem 0 0.3rem;
-  width: 2.95rem;
+  width: 3.1rem;
 }
 .text-main__list-nested {
   padding: 0 0 0 0.8rem;
