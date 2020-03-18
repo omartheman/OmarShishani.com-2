@@ -323,7 +323,9 @@
 .sidebar__link--vid:hover .sidebar__vid-rec {
   animation: vid_button forwards 2s;
 }
-.sidebar__vid-rec:hover {
+.sidebar__link--vid:hover .sidebar__vid-tri {
+  animation: vid_tri forwards 2s;
+  transform-origin: center;
 }
 .s-plain {
   display: none;
@@ -371,7 +373,7 @@
   float: right;
   height: 3.1rem;
   margin: 0.4rem 0.1rem 0.3rem;
-  width: 3.1rem;
+  width: 3rem;
 }
 .text-main__list-nested {
   padding: 0 0 0 0.8rem;
@@ -680,11 +682,19 @@
   }
   50% {
     stroke-dashoffset: 30px;
-    stroke-dasharray: 15px;
+    stroke-dasharray: 10px;
     fill: rgb(0, 234, 255);
   }
   to {
     stroke-dashoffset: 0;
     stroke-dasharray: 0;
+  }
+}
+@keyframes vid_tri {
+  50% {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(-360deg);
   }
 }
