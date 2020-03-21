@@ -36,14 +36,22 @@ $('#navbar-hamburger').on('click', function(){
 //Create a navbar that pops up when you click the hamburger. Probably just want to use rowdy's navbar and give it functionality. 
 
 // Scroll down button dissapears:
+const button_scroll_down = document.querySelector(".button--scroll-down");
+let scroll_opa = 1;
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.querySelector(".button--scroll-down").style.display = "block";
-  } else {
-		
-    document.querySelector(".button--scroll-down").style.display = "none";
+  if (prevScrollpos < currentScrollPos) {
+		let id = setInterval(frame_scroll, 5);
+		function frame_scroll() {
+			if(scroll_opa >= 0) {
+				scroll_opa -= 0.005;
+				button_scroll_down.style.opacity = scroll_opa;
+			} else if (scroll_opa <= 0) {
+				clearInterval(id);
+			}
+		}
+		frame_scroll();
   }
-  prevScrollpos = currentScrollPos;
+	prevScrollpos = currentScrollPos;
 }
