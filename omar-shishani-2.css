@@ -17,6 +17,11 @@
   --root-font-size: 16px;
   font-size: 16px;
 }
+
+html  {
+  scroll-behavior: smooth;
+}
+
 .animation--1 {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 0 0 10px 0;
@@ -34,6 +39,16 @@
   font-family: source_sans_proregular, sans-serif;
   /* $ Denna font-family används under class "body" som en default-backup font familj. $ */
   margin: 0;
+}
+.button--scroll-down {
+  clear: both;
+  display: block;
+  height: 75px;
+  margin: auto;
+  position: fixed;
+    bottom: 3rem;
+    left: calc(50% + var(--sidebar-width)/2 - 75px/2);
+  width: 75px;
 }
 .button-style-1 {
   animation: rainbow-light infinite 5s;
