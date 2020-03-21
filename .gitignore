@@ -1,4 +1,6 @@
 movies
+node_modules
+
 *.png
 *.mp4
 *.otf
