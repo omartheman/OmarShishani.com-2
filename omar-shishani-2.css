@@ -21,7 +21,9 @@
 html  {
   scroll-behavior: smooth;
 }
-
+.article {
+  width: 20rem;
+}
 .animation--1 {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 0 0 10px 0;

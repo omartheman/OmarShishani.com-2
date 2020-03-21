@@ -9,10 +9,12 @@
 
     
     <div>
-      These are the new articles
-      <span><%= articles %></span>
-      <span><%= articles[0]['name'] %></span>
-      <div>the article name is <%= articles.url %></div>
+      <div><%= articles[0].name %></div>
+      <div>
+        <a href="<%= articles[0].url %>">
+          <img class="article" src="thumbnails/smooth_css.png" alt="Smooth CSS Animations Article Thumbnail">
+        </a>
+      </div>
     </div>
     
 
