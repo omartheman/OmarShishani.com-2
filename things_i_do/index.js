@@ -11,14 +11,17 @@ mongoose.connect('mongodb+srv://omarnaod:3yeDroplets@cluster0-zzysp.mongodb.net/
   console.log('ERROR:', err.message);
 });
 
-// const PostSchema = new mongoose.Schema({
-//   title: String,
-//   description: String,
-// })
+const PostSchema = new mongoose.Schema({
+  title: String,
+  description: String,
+});
 
-// const Post = mongoose.model('Post', PostSchema);
+const Post = mongoose.model('Post', PostSchema);
 
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
+  let post = await Post.create({title: 'Test', description: 'This is a test also'});
+  
+  res.send(post);
   res.send('Is this thing on?')
 });
 
