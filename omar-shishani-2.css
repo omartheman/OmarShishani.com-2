@@ -471,6 +471,10 @@ html  {
 }
 @media (max-width: 1000px) {
 /* $ Denna Media query är här för att stapla textrutorna .text-main ovanför varandra när det blir för trångt $ */
+  .container {
+    grid-template-columns: calc(50% - var(--vid-grd-col-gap)*2/3) calc(50% - var(--vid-grd-col-gap)*2/3);
+    gap: 2rem var(--vid-grd-col-gap);
+  }
   .text-main {
     float: left;
     margin: 3rem 0.5rem 1rem 1rem;
@@ -482,6 +486,12 @@ html  {
 }
 @media (max-width: 700px) {
 /* $ Vid 700px tar sidebar upp för mycket rum på skärmen. Dags att byta till dropdown nav meny $ */
+  .button--scroll-down {
+    display: none;
+  }
+  .container {
+    gap: 4rem var(--vid-grd-col-gap);
+  }
   .footer {
   /* $ Footer ges en media query för göra att den tar upp hela skärmen efter media queryn $ */
     margin-left: 0;
@@ -575,6 +585,27 @@ html  {
 }
 @media (max-width: 650px) {
 /* $ Vid 650px krockar profilbilden och h1. följande selektorer åtgärder detta $ */
+  .container {
+    display: block;
+    margin: auto;
+    width: 90%;
+  }
+  .container__wrap {
+    height: 0;
+    max-width: 100%;
+    overflow: hidden;
+    padding-bottom: 100%;
+    /*max-width needed to be put in the container, and max-height in the iframe, for the iframe to properly center on the page*/
+  }
+  .container__video {
+    height: 100%;
+      max-height: 60%;
+    width: 100%;
+    position: absolute;
+      top:0;
+      left: 0;
+  }
+  
   .header__heading--homepage {
     float: none;
     margin: 0.5em auto 0 1em;
@@ -619,6 +650,9 @@ html  {
   }
 }
 @media (max-width: 450px) {
+  .intro {
+    width: auto;
+  }
   .text-main__icon--illus {
     clear: none;
     margin: 0.4rem 0 0.3rem;
