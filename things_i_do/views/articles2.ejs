@@ -1,0 +1,24 @@
+<%- include("partials/header") %>
+
+<!-- README: Articles2 is for testing data from database -->
+  <header class="header">
+  <!-- $ Elementet <header> används för bättre semantik $ -->
+    <h1 class="header__heading--homepage">
+      Articles
+    </h1>
+  </header>
+  <main class="main">
+    <div>
+      <div><%= articles[0].name %></div>
+      <div><%= articles %></div>
+      <div>
+        <a href="<%= articles[0].url %>">
+          <img class="article" src="thumbnails/smooth_css.png" alt="Smooth CSS Animations Article Thumbnail">
+        </a>
+      </div>
+    </div>
+    <video autoplay muted loop class="myVideo">
+      <source src="beach-walk-in-v4.mp4" type="video/mp4">
+    </video>
+  </main>
+<%- include("partials/footer") %>
