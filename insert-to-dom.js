@@ -53,6 +53,9 @@ const mobileNav = String.raw`
     <a href="index.html">
       Home
     </a>
+    <a href="articles">
+      Articles
+    </a>
     <a href="animations.html">
       Animations
     </a>

@@ -24,6 +24,17 @@ html  {
 .article {
   width: 20rem;
 }
+.article--title {
+  text-align: center;
+}
+.article--link {
+  text-decoration: none;
+}
+.article--wrapper {
+  display: inline-block;
+  padding: 0 1rem;
+  width: 20rem;
+}
 .animation--1 {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 0 0 10px 0;
@@ -118,6 +129,13 @@ html  {
   font: 1.5rem source_sans_proregular, sans-serif;
   margin-left: var(--header__subheading-margin-left);
   width: calc(100% - var(--profile-pic-width) + 4.6em - var(--profile-pic-padding)*2 - var(--header__subheading-margin-left));
+}
+.header__heading {
+    margin-left: 1em;
+    float: left;
+    font-family: Comfortaa, 'Century Gothic 600', sans-serif;
+    /* $ Väljer Century Gothic som backup, för att den är lik Comfortaa $ */
+    width: calc(100% - var(--profile-pic-width)/2 - var(--profile-pic-padding)*2);
 }
 .header__heading--homepage {
 /* $ BEM: homepage är modifier $ */
@@ -652,6 +670,68 @@ html  {
 @media (max-width: 450px) {
   .intro {
     width: auto;
+  }
+  #navbar-2-mobile-navigation-page {
+    background-color: #f07fe6; 
+    display: flex;
+      align-items: center;
+      justify-content: space-between;
+    height: var(--navbar-height-mobile);
+    position: fixed;
+      top: 0;
+    width: 100%;
+    z-index: 101;
+  }
+  #navbar-hamburger {
+    display: flex; 
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+    height: 50px;
+      width: 50px;
+    position: fixed;
+      left: auto;
+      right: 0;
+      top: 0;
+    z-index: 100;
+  }
+  #navbar-mobile {
+    background-color: #c11494;
+    height: max-content;
+      width: 100%;
+    position: static;
+      left: 0;
+  }
+  #navbar-mobile a {
+    color: white;
+    display: flex;
+      justify-content: center;
+    font-size: 1.4rem;
+    padding: 1.6rem;
+    text-decoration: none;
+    border-bottom: 3px solid black;
+  }
+  #navbar-mobile a:first-of-type {
+    border-top: 3px solid black;
+  }
+  #navbar-mobile-featured {
+    background-color: #e3397a;
+    border-radius: 1em;
+    border: 0.1em solid #ebc034;
+    height: max-content;
+      width: 90vw;
+  
+    position: fixed;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 0;
+  }
+  #navbar-mobile-featured a {
+    display: flex;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.7rem;
   }
   .text-main__icon--illus {
     clear: none;
