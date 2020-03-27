@@ -4,18 +4,6 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 
-// ********* Following block added from Atlas
-const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://omarnaod:3yeDroplets@cluster0-zzysp.mongodb.net/test?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
-// *********************************************
-
-// app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '../..'));
 
 mongoose.connect('mongodb+srv://omarnaod:3yeDroplets@cluster0-zzysp.mongodb.net/test?retryWrites=true&w=majority',
