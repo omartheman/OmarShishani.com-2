@@ -765,6 +765,13 @@ html  {
     height: 100%;
   }
 }
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
 @keyframes rainbow {
 0% {border: 50px solid red;}
 8.33%  {border: 50px solid red;}

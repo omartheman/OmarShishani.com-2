@@ -1,5 +1,5 @@
 const sidebar = String.raw`
-<aside class="sidebar">
+<aside class="sidebar no-print">
   <div class="os-v2-container">
     <a class="sidebar__link sidebar__link--home" href="index.html">
       <svg class="os-v2-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 48" height="48mm" width="75mm">
@@ -39,7 +39,7 @@ const sidebar = String.raw`
 </aside>
 `;
 const footer = String.raw`
-<footer class="footer">
+<footer class="footer no-print">
   <span><a href="https://www.linkedin.com/in/omar-shishani-school/" target="_blank">LinkedIn</a></span>
   <span><a href="https://www.instructables.com/member/omarshishanischool/" target="_blank">Instructables</a></span>
   <span><a href="https://github.com/crazy-hobo" target="_blank">Github</a></span>
@@ -47,7 +47,7 @@ const footer = String.raw`
 `;
 
 const mobileNav = String.raw`
-<div id="mobile-navigation-main-content">
+<div id="mobile-navigation-main-content" class="no-print">
   <!-- $ navbar elementet och mobile navigation kommer sist i HTML, för semantik $ -->
   <nav id="navbar-mobile">
     <a href="index.html">
@@ -64,7 +64,7 @@ const mobileNav = String.raw`
     </a>
   </nav> <!-- <nav id="navbar-3"> -->
 </div> <!-- <div id="mobile-navigation-main-content"> -->
-<div id="navbar-hamburger"> 
+<div id="navbar-hamburger" class="no-print"> 
   <div class="navbar-hamburger-bun"></div>
   <div class="navbar-hamburger-bun"></div>
   <div class="navbar-hamburger-bun"></div>
