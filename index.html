@@ -30,14 +30,18 @@
 			<!-- $  $ -->
 			<!-- $ Jag använder kommentarer på slutet av stora divs, för att veta vilken div som det är som ligger ovanför. Detta är bra när man läser koden under, eller har flera divs staplade på varandra $ -->
 			<a href="#text-main">
+				<!-- $ jag har ritat en svg knapp för att göra sidan skrolla ner när man trycker. Då kan man ha utrymme för att se på bakgrundsbilden innan info dyker upp $ -->
 				<svg class="button--scroll-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.458 26.458" height="100" width="100">
 					<circle transform="matrix(-1 0 0 1 0 -270.542)" r="12.548" cy="283.817" cx="-13.245" stroke="#000" stroke-width=".864" stroke-linecap="round" fill="none"/><g fill="none" stroke="#000" stroke-width=".665" stroke-linecap="round" stroke-linejoin="round"><path d="M22.212 9.877l-8.884 9.12M4.444 9.877l8.884 9.12"/></g>
 				</svg>
 			</a>
 
 			<div id="text-main" class="text-main">
+				<!-- $ Text-main är högsta div elementet som innesluter dom här blocken. Den används för dom två info rutorna på hemsidan $ -->
 				<h2 class="text-main__title">What I can offer you.</h2>	
+				<!-- $ h2 står utanför ul listan, så den kan få sin egen bakgrundsstil $ -->
 				<ul class="text-main__content text-main__content--section-1">
+					<!-- $ en ul lista används utan en omslutande div för att den agerar som en div själv $ -->
 					<li class="text-main__list-itm text-main__list-itm--section-1">
 						<strong>Total Control</strong>
 						<ul class="text-main__list-nested">
@@ -63,25 +67,25 @@
 								</div>
 							</li>	
 						</ul>
+						<span class="text-main__icon-ps-il-wrap">
+							<img class="text-main--icon text-main__icon--ps"  src="photoshop-icon-square.png" alt="">
+							<svg class="text-main__icon text-main__icon--illus" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240 234" style="enable-background:new 0 0 240 234;" xml:space="preserve">
+								<style type="text/css">
+									.st0{fill:#261300;}
+									.st1{fill:#FF7C00;}
+								</style>
+								<g>
+									<path class="st0" d="M10,10h220v214H10V10z"/>
+									<path class="st1" d="M0,0v234h240V0H0z M10,10h220v214H10V10z"/>
+									<path class="st1" d="M83.3,132.5l-7.9,30c-0.2,0.8-0.5,1-1.5,1H59.2c-1,0-1.2-0.3-1-1.5l28.4-99.4c0.5-1.8,0.8-3.4,1-8.3
+										c0-0.7,0.3-1,0.8-1h21c0.7,0,1,0.2,1.2,1l31.8,107.9c0.2,0.8,0,1.3-0.8,1.3H125c-0.8,0-1.3-0.2-1.5-0.9l-8.3-30.1L83.3,132.5
+										L83.3,132.5z M111.1,116.3c-2.8-11.1-9.4-35.3-11.9-47h-0.2c-2.1,11.7-7.4,31.5-11.6,47H111.1z M156.1,60.7
+										c0-6.4,4.5-10.2,10.2-10.2c6.1,0,10.2,4.1,10.2,10.2c0,6.6-4.3,10.2-10.4,10.2C160.3,70.9,156.1,67.3,156.1,60.7L156.1,60.7z
+										M157.3,83.4c0-0.8,0.3-1.2,1.2-1.2h15.7c0.8,0,1.2,0.3,1.2,1.2v78.9c0,0.8-0.2,1.2-1.2,1.2h-15.5c-1,0-1.3-0.5-1.3-1.3V83.4z"/>
+								</g>
+							</svg>
+						</span>
 					</li>
-					<span class="text-main__icon-ps-il-wrap">
-						<img class="text-main--icon text-main__icon--ps"  src="photoshop-icon-square.png" alt="">
-						<svg class="text-main__icon text-main__icon--illus" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240 234" style="enable-background:new 0 0 240 234;" xml:space="preserve">
-							<style type="text/css">
-								.st0{fill:#261300;}
-								.st1{fill:#FF7C00;}
-							</style>
-							<g>
-								<path class="st0" d="M10,10h220v214H10V10z"/>
-								<path class="st1" d="M0,0v234h240V0H0z M10,10h220v214H10V10z"/>
-								<path class="st1" d="M83.3,132.5l-7.9,30c-0.2,0.8-0.5,1-1.5,1H59.2c-1,0-1.2-0.3-1-1.5l28.4-99.4c0.5-1.8,0.8-3.4,1-8.3
-									c0-0.7,0.3-1,0.8-1h21c0.7,0,1,0.2,1.2,1l31.8,107.9c0.2,0.8,0,1.3-0.8,1.3H125c-0.8,0-1.3-0.2-1.5-0.9l-8.3-30.1L83.3,132.5
-									L83.3,132.5z M111.1,116.3c-2.8-11.1-9.4-35.3-11.9-47h-0.2c-2.1,11.7-7.4,31.5-11.6,47H111.1z M156.1,60.7
-									c0-6.4,4.5-10.2,10.2-10.2c6.1,0,10.2,4.1,10.2,10.2c0,6.6-4.3,10.2-10.4,10.2C160.3,70.9,156.1,67.3,156.1,60.7L156.1,60.7z
-									M157.3,83.4c0-0.8,0.3-1.2,1.2-1.2h15.7c0.8,0,1.2,0.3,1.2,1.2v78.9c0,0.8-0.2,1.2-1.2,1.2h-15.5c-1,0-1.3-0.5-1.3-1.3V83.4z"/>
-							</g>
-						</svg>
-					</span>
 					<li class="text-main__text--simplicity text-main__list-itm text-main__list-itm--section-1">
 						<strong>Simplicity</strong>
 						<ul class="text-main__list-nested">
@@ -130,7 +134,7 @@
 					<li class="text-main__list-itm">Version Control with Git and Github, to easily revert to a past version of site.</li>
 					<li class="text-main__list-itm">Node / Express / NPM</li>
 				</ul>
-			</div> <!-- <div class="text-main text-main--2"> -->
+			</div> <!-- <div class="text-main text-main-2"> -->
 
 			<video autoplay muted loop class="myVideo no-print">
 				<source src="waves-color-update.mp4" type="video/mp4">
