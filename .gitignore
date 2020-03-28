@@ -1,6 +1,6 @@
 movies
 node_modules
-
+*.xcf
 *.png
 *.mp4
 *.otf
