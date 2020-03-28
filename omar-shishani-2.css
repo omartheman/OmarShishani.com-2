@@ -21,7 +21,20 @@
 html  {
   scroll-behavior: smooth;
 }
-
+.article {
+  width: 20rem;
+}
+.article--title {
+  text-align: center;
+}
+.article--link {
+  text-decoration: none;
+}
+.article--wrapper {
+  display: inline-block;
+  padding: 0 1rem;
+  width: 20rem;
+}
 .animation--1 {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 0 0 10px 0;
@@ -116,6 +129,13 @@ html  {
   font: 1.5rem source_sans_proregular, sans-serif;
   margin-left: var(--header__subheading-margin-left);
   width: calc(100% - var(--profile-pic-width) + 4.6em - var(--profile-pic-padding)*2 - var(--header__subheading-margin-left));
+}
+.header__heading {
+    margin-left: 1em;
+    float: left;
+    font-family: Comfortaa, 'Century Gothic 600', sans-serif;
+    /* $ Väljer Century Gothic som backup, för att den är lik Comfortaa $ */
+    width: calc(100% - var(--profile-pic-width)/2 - var(--profile-pic-padding)*2);
 }
 .header__heading--homepage {
 /* $ BEM: homepage är modifier $ */
@@ -469,6 +489,10 @@ html  {
 }
 @media (max-width: 1000px) {
 /* $ Denna Media query är här för att stapla textrutorna .text-main ovanför varandra när det blir för trångt $ */
+  .container {
+    grid-template-columns: calc(50% - var(--vid-grd-col-gap)*2/3) calc(50% - var(--vid-grd-col-gap)*2/3);
+    gap: 2rem var(--vid-grd-col-gap);
+  }
   .text-main {
     float: left;
     margin: 3rem 0.5rem 1rem 1rem;
@@ -480,6 +504,12 @@ html  {
 }
 @media (max-width: 700px) {
 /* $ Vid 700px tar sidebar upp för mycket rum på skärmen. Dags att byta till dropdown nav meny $ */
+  .button--scroll-down {
+    display: none;
+  }
+  .container {
+    gap: 4rem var(--vid-grd-col-gap);
+  }
   .footer {
   /* $ Footer ges en media query för göra att den tar upp hela skärmen efter media queryn $ */
     margin-left: 0;
@@ -573,6 +603,27 @@ html  {
 }
 @media (max-width: 650px) {
 /* $ Vid 650px krockar profilbilden och h1. följande selektorer åtgärder detta $ */
+  .container {
+    display: block;
+    margin: auto;
+    width: 90%;
+  }
+  .container__wrap {
+    height: 0;
+    max-width: 100%;
+    overflow: hidden;
+    padding-bottom: 100%;
+    /*max-width needed to be put in the container, and max-height in the iframe, for the iframe to properly center on the page*/
+  }
+  .container__video {
+    height: 100%;
+      max-height: 60%;
+    width: 100%;
+    position: absolute;
+      top:0;
+      left: 0;
+  }
+  
   .header__heading--homepage {
     float: none;
     margin: 0.5em auto 0 1em;
@@ -617,6 +668,71 @@ html  {
   }
 }
 @media (max-width: 450px) {
+  .intro {
+    width: auto;
+  }
+  #navbar-2-mobile-navigation-page {
+    background-color: #f07fe6; 
+    display: flex;
+      align-items: center;
+      justify-content: space-between;
+    height: var(--navbar-height-mobile);
+    position: fixed;
+      top: 0;
+    width: 100%;
+    z-index: 101;
+  }
+  #navbar-hamburger {
+    display: flex; 
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+    height: 50px;
+      width: 50px;
+    position: fixed;
+      left: auto;
+      right: 0;
+      top: 0;
+    z-index: 100;
+  }
+  #navbar-mobile {
+    background-color: #c11494;
+    height: max-content;
+      width: 100%;
+    position: static;
+      left: 0;
+  }
+  #navbar-mobile a {
+    color: white;
+    display: flex;
+      justify-content: center;
+    font-size: 1.4rem;
+    padding: 1.6rem;
+    text-decoration: none;
+    border-bottom: 3px solid black;
+  }
+  #navbar-mobile a:first-of-type {
+    border-top: 3px solid black;
+  }
+  #navbar-mobile-featured {
+    background-color: #e3397a;
+    border-radius: 1em;
+    border: 0.1em solid #ebc034;
+    height: max-content;
+      width: 90vw;
+  
+    position: fixed;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 0;
+  }
+  #navbar-mobile-featured a {
+    display: flex;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.7rem;
+  }
   .text-main__icon--illus {
     clear: none;
     margin: 0.4rem 0 0.3rem;
@@ -648,6 +764,13 @@ html  {
     width: auto;
     height: 100%;
   }
+}
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
 }
 @keyframes rainbow {
 0% {border: 50px solid red;}
