@@ -20,7 +20,9 @@
 		<main class="main">
 
 			<div class="container">
+				<!-- En container skapar gridsystemet, för att underlätta organiseringen och responsiva placeringen av video elementen -->
 				<div class="container__wrap">
+					<!-- container__wrap gör det möjligt att centrera videorna  -->
 					<iframe class="container__video" width="560" height="315" src="https://www.youtube.com/embed/7TukNgrxAJk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 				<div class="container__wrap">
@@ -35,6 +37,7 @@
 			</div>
 
 			<video autoplay muted loop class="myVideo">
+				<!-- video bakgrunden placeras sist i html, för att den har minst semantisk värde -->
 				<source src="beach-walk-in-v4.mp4" type="video/mp4">
 			</video>
 		</main>

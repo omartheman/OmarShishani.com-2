@@ -12,16 +12,18 @@
   --profile-pic-padding: 1em;
   --profile-pic-width: 14em;
   --sidebar-width: 10em;
-  --star-flash-duration: 0.7s;
   --vid-grd-col-gap: 1rem;
   --root-font-size: 16px;
   font-size: 16px;
+  /* $ fontstorleken används för att göra så att rem blir samma på alla webbläsare. Genom att definiera fontstorleken själv blir det inga överaskningar $ */
 }
 
 html  {
   scroll-behavior: smooth;
+  /* $ scroll-behavior gör så att hemsidan går ner långsammare, inte direkt, när man trycker på ned knappen $ */
 }
 .article {
+  /* $ article klassarna används för processanalys sidan $ */
   width: 20rem;
 }
 .article--title {
@@ -35,16 +37,6 @@ html  {
   padding: 0 1rem;
   width: 20rem;
 }
-.animation--1 {
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 0 0 10px 0;
-  float: left;
-  margin-bottom: 5rem;
-}
-.BN-button-container {
-  margin: auto;
-  width: 20em;
-}
 .body {
 /* $  $ */
 /* $ Enligt BEM är det bättre att använda en class för att selektera body, istället för body selektorn (se processanalys) $ */
@@ -54,6 +46,7 @@ html  {
   margin: 0;
 }
 .button--scroll-down {
+  /* $ denna modifier ger stil till ned-knappen på hemsidan $ */
   clear: both;
   display: block;
   height: 75px;
@@ -61,18 +54,12 @@ html  {
   position: fixed;
     bottom: 3rem;
     left: calc(50% + var(--sidebar-width)/2 - 75px/2);
+    /* $ den här kalkyleringen gör så att knappen befinner sig i mitten av sidan. 50% anger sidans mittpunkt, och sedan subtraheras halva bredden av knappen $ */
   width: 75px;
-}
-.button-style-1 {
-  animation: rainbow-light infinite 5s;
-  animation-timing-function: linear;
-  background-color: red;
-  border: 3px solid black;
-  border-radius: 10px;
-  padding: 0.3em;
 }
 .container {
   display: grid;
+  /* $ Denna grid används för "videos" sidan  $ */
   grid-template-columns: calc(33.33% - var(--vid-grd-col-gap)*2/3) calc(33.33% - var(--vid-grd-col-gap)*2/3) calc(33.33% - var(--vid-grd-col-gap)*2/3);
   grid-template-rows: 20vw;
   gap: 0 var(--vid-grd-col-gap);
@@ -81,6 +68,7 @@ html  {
   width: 90%;
 }
 .container__wrap {
+  /* $ Container-wrap omsluter videonas iframe element, för att göra video storleken ändra när man ändrar sidostorleken $ */
   height: 0;
   max-width: 100%;
   overflow: hidden;
@@ -89,6 +77,7 @@ html  {
   /*max-width needed to be put in the container, and max-height in the iframe, for the iframe to properly center on the page*/
 }
 .container__video {
+  /* $ detta är en ytterligare omslutare för iframe för att göra det möjligt att centrera videona $ */
   height: 100%;
     max-height: 60%;
   width: 100%;
@@ -105,9 +94,11 @@ html  {
   height: 4em;
   margin-left: var(--sidebar-width);
   width: calc(100% - var(--sidebar-width));
+  /* footer bredden blir skärmbredden, minus aside bredden */
   bottom: 0;
 }
   .footer a {
+    /* denna selektor väljer alla "a" taggar i footern */
     border: 2px solid black;
     border-radius: 5px;
     color: black;
@@ -159,6 +150,7 @@ html  {
 }
 .intro {
   background-color: rgba(255, 255, 255, 0.5);
+  /* Denna bakgrundsfärgen gör så att elementen blir lite genomskinlig, genom "alpha" */
   border-radius: 0 100px 100px 0;
   clear: both;
   padding: 1em 2em 1em 2em;
@@ -168,10 +160,6 @@ html  {
 .intro__text {
   font-family: Comfortaa, 'Century Gothic 600', sans-serif;
 }
-.jewel-svg {
-  max-width: 100%;
-  height: 100%;
-}
 .main {
   /* $ Main har en klass, enligt BEM $ */
   clear: both;
@@ -180,12 +168,14 @@ html  {
   /* $ marginleft gör att main börjar bredvid sidebar $ */
 }
 #mobile-navigation-main-content {
+  /* Mobila navigeringsmenyn visas inte förrän max 700px */
 	display: none;
 	position: fixed;
 		top: 0;
 		left: 0;
   margin-left: 0;
   opacity: 0.98;
+  /* Opacity gör att menyn blir lite genomskinlig */
   padding: 0px;
   width: 100%;
   z-index: 2;
@@ -215,15 +205,15 @@ html  {
   transform: scale(0.9);
 }
 #navbar-hamburger-a-tag {
+  /* mobila navigerings menyn ges stilar som gör den osynlig */
   height: 0px;
     width: 0px;
   position: absolute;
     left: -10000px;
+    /* mobila navigerings meny knappen placeras ur syn innan sidan kommer ner till 700px */
     top: auto;
 }
 .navbar-hamburger-bun {
-  animation: bun-spin 1s 1;
-  animation-play-state: paused;
   background-color: black;
   border-radius: 100px;
   height: 5px;
@@ -241,12 +231,14 @@ html  {
   z-index: 101;
 }
 #navbar-mobile {
+  /* En annan mobile navigerings meny som väntar på 700px */
   position: absolute;
     left: -10000px;
   width: 0px;
   height: 0px;
 }
   #navbar-mobile a {
+    /* här ges fontstil till alla länkar i mobila menyn */
     font-family: Comfortaa, 'Century Gothic 600', sans-serif;
   }
 #navbar-mobile-featured {
@@ -268,24 +260,18 @@ html  {
 .o-plain {
   display: none;
   animation: rainbow_svg_fill infinite 16s linear;
+  /* animeringen gör att OS logon förändrar färg */
   stroke: var(--os-border-color);
 }
 .profile-pic {
   border-radius: 100%;
+  /* 100% gör att profilbilden på mig blir en cirkel */
   display: block;
   float: right;
   height: var(--profile-pic-width);
+  /* variablar används här för att göra det lite lättare att ändra storleken om jag vill */
   padding: 1em;
   width: var(--profile-pic-width);
-}
-.reload-button {
-  display: block;
-  font-family: Comfortaa, 'Century Gothic 600', sans-serif; 
-  margin: auto;
-  overflow: auto;
-  text-align: center;
-  text-decoration: none;
-  width: 10rem;
 }
 .sidebar {
   background-color: lightgrey;
@@ -309,38 +295,10 @@ html  {
   text-decoration: none;
 }
 .sidebar__link:visited {
+  /* Här blir sidebar länkarna oförändrad i färg efter man har klickat på dom en gång */
   color: #8300cc;
   text-decoration: none;
-}
-.sidebar__animations-object {
-  pointer-events: none; 
-}
-.sidebar__link--animations:hover .star-big-upper-left {
-  animation: fade_flash var(--star-flash-duration) infinite;
-}
-.sidebar__link--animations:hover .star-big-upper-right {
-  animation: fade_flash var(--star-flash-duration) infinite;
-  animation-delay: 0.2s;
-}
-.sidebar__link--animations:hover .star-big-lower {
-  animation: fade_flash var(--star-flash-duration) infinite;
-  animation-delay: 0.1s;
-}
-.sidebar__link--animations:hover .star-small-lower-left {
-  animation: fade_flash var(--star-flash-duration) infinite;
-  animation-delay: 0.3s;
-}
-.sidebar__link--animations:hover .star-small-upper-left {
-  animation: fade_flash var(--star-flash-duration) infinite;
-  animation-delay: 0.1s;
-}
-.sidebar__link--animations:hover .star-small-upper-right {
-  animation: fade_flash var(--star-flash-duration) infinite;
-  animation-delay: 0.4s;
-}
-.sidebar__link--animations:hover .star-small-lower-right {
-  animation: fade_flash var(--star-flash-duration) infinite;
-  animation-delay: 0s;
+  /* text decoration gör så att länkarna får ingen understrykning */
 }
 .sidebar__link--home {
   display: block;
@@ -376,6 +334,7 @@ html  {
   float: left;
   margin: 5rem 0.5rem 1rem 1rem;
   width: calc(50% - 1.5rem);
+  /* bredden blir halva sidans storlek minus högra och vänstra margin på text-main, annars blir den för stor */
 }
 .text-main--2 {
   margin: 5rem 1rem 1rem 0.5rem;
@@ -391,6 +350,7 @@ html  {
   padding: 2rem 2rem 2rem 2rem;
 }
 .text-main__icon {
+  /* ikonerna inne i text-main ges stil så att de placeras rätt vid sidstorleksförändring */
   float: right;
   height: 3rem;
 }
@@ -418,9 +378,11 @@ html  {
 }
 .text-main__list-itm--section-1 {
   list-style-type: none;
+  /* första "li" elementen på vänstra sidan får ingen stil */
 }
 .text-main__list-itm-nested--section-1 {
   list-style-type: disc;
+  /* här definieras hur punkerna ska se ut på sekundära "li" elementen */
   margin-left: 1em;
 }
 .text-main__list-itm--photo-man {
@@ -454,14 +416,6 @@ html  {
 }
 .welcome-text {
 	line-height: 2em;
-}
-@font-face {
-/* $ Comfortaa inkluderas som en font-face, ifall Google Fonts länk fungerar inte $ */
-    font-family: 'Comfortaa';
-    src: url('fonts/comfortaa-variablefont_wght-webfont.woff2') format('woff2'),
-         url('fonts/comfortaa-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 }
 @font-face {
       font-family: 'Century Gothic 600';
@@ -820,6 +774,7 @@ html  {
   }
 }
 @media (min-aspect-ratio: 16/9) {
+  /* dessa selektorer gör så att video-bakgrunderna förändras i stolek när sidostorleken förändras, så att videoklipperna tar alltid upp hela skärmen */
   .myVideo {
     width: 100%;
     height: auto;
@@ -839,6 +794,7 @@ html  {
     }
 }
 @keyframes rainbow {
+  /* Här skrivs animeringen för färgförändring */
 0% {border: 50px solid red;}
 8.33%  {border: 50px solid red;}
 25%  {border: 50px solid orange;}
