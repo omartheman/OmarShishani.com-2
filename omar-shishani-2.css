@@ -7,6 +7,8 @@
   --body-background-color: white;
   --header__subheading-margin-left: 1.5em;
   --margin-home_reload-700plus: 25vw;
+  --navbar_main_height: 3rem;  
+  --navbar_main_padding: 0.5em;
   --os-border-color: black;
   --OS-logo-color: #4b4545;
   --profile-pic-padding: 1em;
@@ -50,6 +52,7 @@ html  {
   font-family: source_sans_proregular, sans-serif;
   /* $ Denna font-family används under class "body" som en default-backup font familj. $ */
   margin: 0;
+  margin-top: calc(var(--navbar_main_height) + var(--navbar_main_padding));
 }
 .button--scroll-down {
   clear: both;
@@ -155,6 +158,9 @@ html  {
   float: right;
   overflow: auto;
 }
+.image--contracting {
+  width: 500px;
+}
 .intro {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 0 100px 100px 0;
@@ -200,6 +206,22 @@ html  {
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
+}
+.navbar--main {
+  align-items: center;
+  padding: var(--navbar_main_padding);
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  height: var(--navbar_main_height);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.navbar--main__button {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px; 
 }
 #navbar-hamburger {
 /* $ Kod för hamburger gömmer dropdown-menyn  när skärmen är under en viss storlek $ */
