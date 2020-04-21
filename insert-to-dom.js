@@ -56,6 +56,9 @@ const mobileNav = String.raw`
     <a href="articles.html">
       Articles
     </a>
+    <a href="contracting.html">
+      Contracting
+    </a>
     <a href="animations.html">
       Animations
     </a>
@@ -76,3 +79,15 @@ document.querySelector('main').insertAdjacentHTML('afterend', footer);
 
 const main = document.querySelector('main');
 main.insertAdjacentHTML('beforeend', mobileNav);
+
+const nav = String.raw`
+<nav class="navbar--main">
+  <div class="navbar--main__button">
+    <a href="contracting.html">
+      Contracting
+    </a>
+  </div>
+</nav>
+`;
+const body = document.querySelector('body'); 
+body.insertAdjacentHTML('afterbegin', nav);

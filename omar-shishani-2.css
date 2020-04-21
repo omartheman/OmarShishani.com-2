@@ -52,7 +52,6 @@ html  {
   font-family: source_sans_proregular, sans-serif;
   /* $ Denna font-family används under class "body" som en default-backup font familj. $ */
   margin: 0;
-  margin-top: calc(var(--navbar_main_height) + var(--navbar_main_padding));
 }
 .button--scroll-down {
   clear: both;
@@ -98,7 +97,7 @@ html  {
     left: 0;
 }
 .footer {
-  background-color: #e0ade6ba;
+  background-color:rgba(238, 183, 255, 0.8);
   display: flex;
     align-items: center;
     justify-content: space-around;
@@ -116,9 +115,10 @@ html  {
     text-decoration: none;
   }
 .header {
-  background-color: #e0ade6ba;
+  background-color: rgba(238, 183, 255, 0.8);
   float: right;
   margin-left: var(--sidebar-width);
+  margin-top: calc(var(--navbar_main_height) + var(--navbar_main_padding) * 2);
   width: calc(100% - var(--sidebar-width));
 }
 .header--homepage {
@@ -159,6 +159,7 @@ html  {
   overflow: auto;
 }
 .image--contracting {
+  max-width: 100%;
   width: 500px;
 }
 .intro {
@@ -213,9 +214,10 @@ html  {
   background-color: rgb(240, 240, 240);
   display: flex;
   height: var(--navbar_main_height);
+  margin-left: var(--sidebar-width);
   position: fixed;
   top: 0;
-  width: 100%;
+  width: calc(100% - var(--sidebar-width));
   z-index: 1;
 }
 .navbar--main__button {
@@ -400,11 +402,20 @@ html  {
 .text-main--2 {
   margin: 5rem 1rem 1rem 0.5rem;
 }
+.text-main--clear {
+  clear: left;
+}
+.text-main--float-right {
+  float: right;
+}
 .text-main__content {
-  background-color: #e0ade6d5;
+  background-color:rgba(238, 183, 255, 0.8);
   border-radius: 10px;
   font-size: 1.4rem;
   margin: 0;
+  padding: 2rem 2rem 2rem 2rem;
+}
+.text-main__content--homepage-bullets {
   padding: 2rem 2rem 2rem 4rem;
 }
 .text-main__content--section-1 {
@@ -537,6 +548,7 @@ html  {
     /* $ Margin-left och width förändras till 0 och 100% när sidebar försvinnner, annars lämnar dom öppen rum var sidebar var $ */
   }
   .header {
+    margin-top: 0;
     width: 100%;
   }
   .main {
@@ -570,6 +582,9 @@ html  {
   .sidebar {
     display: none;
     /* $ Display:none tar bort elementet från dokumentflödet. Dock kan inga med screen-reader se elementet i koden heller. $ */
+  }
+  .navbar--main {
+    display: none;
   }
   #navbar-2-mobile-navigation-page {
     background-color: #f07fe6; 
