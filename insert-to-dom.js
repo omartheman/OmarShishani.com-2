@@ -43,6 +43,7 @@ const footer = String.raw`
   <span><a href="https://www.linkedin.com/in/omar-shishani-school/" target="_blank">LinkedIn</a></span>
   <span><a href="https://www.instructables.com/member/omarshishanischool/" target="_blank">Instructables</a></span>
   <span><a href="https://github.com/crazy-hobo" target="_blank">Github</a></span>
+  <div>Last Updated April 2020</div>
 </footer>
 `;
 

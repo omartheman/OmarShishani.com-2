@@ -408,6 +408,10 @@ html  {
 .text-main--float-right {
   float: right;
 }
+.text-main--full-width {
+  float: none;
+  width: calc(100% - 2rem);
+}
 .text-main__content {
   background-color:rgba(238, 183, 255, 0.8);
   border-radius: 10px;
@@ -415,6 +419,53 @@ html  {
   margin: 0;
   padding: 2rem 2rem 2rem 2rem;
 }
+.text-main__content--grid-contracting {
+  display: grid; 
+  gap: 1rem 1rem;
+  grid-template-columns: calc(33%-(2rem/3)) calc(33%-(2rem/3)) calc(33%-(2rem/3));
+  grid-template-rows: calc(50%-(1rem/2)) calc(50%-(1rem/2));
+  grid-template-areas: 
+    "main    main    top"
+    "main    main    foot";
+}
+
+@media (max-width: 1000px) {
+  .text-main__content--grid-contracting {
+    grid-template-areas: 
+      "main    main    main"
+      "foot    .       top";
+  }
+}
+@media (max-width: 600px) {
+  .text-main__content--grid-contracting {
+    grid-template-areas: 
+      "main"
+      "foot"
+      "top";
+  }
+  
+}
+
+.text-main__grid-item-1 {
+  grid-area: main;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+}
+
+.text-main__grid-item-2 {
+  grid-area: top;
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+}
+
+.text-main__grid-item-3 {
+  grid-area: foot;
+  max-height: 100%;
+  max-width: 100%;
+}
+
 .text-main__content--homepage-bullets {
   padding: 2rem 2rem 2rem 4rem;
 }

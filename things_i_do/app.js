@@ -68,6 +68,13 @@ app.get('/articles', (req, res) => {
 //   console.log('Server is listening on port 3000') 
 // });
 
+const path = require('path');
+
+app.get('/contracting', (req, res) => {
+  res.sendFile(
+    path.join(__dirname, '../', 'contracting.html'))
+});
+
 app.listen(process.env.PORT || 3000 || 27016 || 27015 || 27017, process.env.IP, function(){
   console.log('Server is running on port 3000');
 });
