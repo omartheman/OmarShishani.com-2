@@ -13,7 +13,7 @@
   --OS-logo-color: #4b4545;
   --profile-pic-padding: 1em;
   --profile-pic-width: 14em;
-  --sidebar-width: 10em;
+  --sidebar-width: 10rem;
   --star-flash-duration: 0.7s;
   --vid-grd-col-gap: 1rem;
 }
@@ -147,6 +147,9 @@ html  {
     /* $ Väljer Century Gothic som backup, för att den är lik Comfortaa $ */
     width: calc(100% - var(--profile-pic-width)/2 - var(--profile-pic-padding)*2);
 }
+.header--contracting {
+  border-bottom: 1px solid black;
+}
 .header__heading--homepage {
 /* $ BEM: homepage är modifier $ */
   margin-left: 1em;
@@ -216,6 +219,37 @@ html  {
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
+}
+.navbar--contracting {
+  background-color: hsla(285, 100%, 95%, 0.8);
+  float: right;
+  float: left;
+  font: 1.2rem source_sans_proregular, sans-serif;
+  font-weight: 800;
+  height: 3.5em;
+  margin-left: var(--sidebar-width);
+  width: calc(100% - var(--sidebar-width));
+}
+.navbar--contracting__button {
+  background-color: rgb(222, 207, 255);
+  border: 2px solid rgb(115, 67, 155);
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 
+    0px 4px 0px 0px rgb(162, 0, 255), 
+    0px 5px 0px 0px rgb(94, 71, 107),
+    0px 7px 10px -2px;
+  display: inline-block;
+  margin: 0 0.5em 0.5em;
+  padding: 0.5em;
+  
+}
+.navbar--contracting__button:hover {
+  padding-top: 0.75rem;
+  box-shadow: 
+    0px 2px 0px 0px rgb(162, 0, 255), 
+    0px 5px 0px 0px rgb(94, 71, 107),
+    0px 7px 10px -2px;
 }
 .navbar--main {
   align-items: center;
