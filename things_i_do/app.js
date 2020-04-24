@@ -57,11 +57,19 @@ app.get('/', async (req, res) => {
   // });
 });
 
-app.get('/articles', (req, res) => {
+app.get('/articles3', (req, res) => {
+  res.render('articles3.ejs');
+});
+
+app.get('/articles2', (req, res) => {
   // res.send('its working');
   let article = Article.find({}, function(err, articles){
     res.render('articles2.ejs', {articles: articles});
   });
+});
+
+app.get('/testtest', (req, res) => {
+  res.send('test works');
 });
 
 // app.listen(3000, () => { 
@@ -70,9 +78,9 @@ app.get('/articles', (req, res) => {
 
 const path = require('path');
 
-app.get('/contracting', (req, res) => {
+app.get('/omarscontracting', (req, res) => {
   res.sendFile(
-    path.join(__dirname, '../', 'contracting.html'))
+    path.join(__dirname, '../public_html', 'contracting.html'))
 });
 
 app.listen(process.env.PORT || 3000 || 27016 || 27015 || 27017, process.env.IP, function(){

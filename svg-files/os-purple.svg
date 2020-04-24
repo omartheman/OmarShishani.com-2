@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 75 48"
+   height="48mm"
+   width="75mm"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="os-purple.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1335"
+     inkscape:window-height="480"
+     id="namedview8"
+     showgrid="false"
+     inkscape:zoom="1.0583333"
+     inkscape:cx="141.73228"
+     inkscape:cy="90.708661"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg6" />
+  <path
+     d="M66.21 18.326c6.386.824 6.763 4.935 6.772 7.428v13.649c-.563 4.867-3.649 6.296-6.763 6.628h-29.92c6.444-3.336 9.927-7.608 11.911-12.352h13.595c3.106-.138 2.755-4.405-.007-4.412H49.446c2.426-7.987-.96-21.887-12.706-26.823h31.5c7.181.686 6.388 10.998.001 11.559H56.593c-1.98.018-2.725 3.889 0 4.323z"
+     fill="#818181"
+     stroke="#000"
+     stroke-width="1.058"
+     id="path2" />
+  <path
+     d="M24.696 1.67A22.362 22.362 0 002.334 24.03a22.362 22.362 0 0022.362 22.363A22.362 22.362 0 0047.057 24.03 22.362 22.362 0 0024.696 1.669zm.168 18.589a3.618 3.618 0 013.617 3.617 3.618 3.618 0 01-3.617 3.618 3.618 3.618 0 01-3.618-3.618 3.618 3.618 0 013.618-3.617z"
+     fill="#fe0000"
+     stroke="#000"
+     stroke-width="1.058"
+     stroke-linecap="round"
+     id="path4"
+     style="fill:#cd87de" />
+</svg>
