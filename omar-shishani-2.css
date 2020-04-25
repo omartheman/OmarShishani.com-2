@@ -415,8 +415,6 @@ html  {
   animation: drill forwards 5s;
   transform-origin: center;
 }
-.sidebar__link--drill {
-}
 .sidebar__link--drill-circle {
   transform: none !important;
 }
@@ -437,7 +435,7 @@ html  {
 .sidebar__link--drill:hover .sidebar__link--shard-2 {
   animation: shardfly2 1s forwards;
   animation-delay: 1.4s;
-  stroke-width: 0.3;
+  stroke-width: 0.1;
 }
 .sidebar__link--drill:hover .sidebar__link--shard-3 {
   animation: shardfly3 1s forwards;
@@ -451,7 +449,7 @@ html  {
 .sidebar__link--drill:hover .sidebar__link--shard-5 {
   animation: shardfly5 1s forwards;
   animation-delay: 1.4s;
-  stroke-width: 0.2;
+  stroke-width: 0.1;
 }
 .sidebar__link--drill:hover .sidebar__link--shard-6 {
   animation: shardfly6 1s forwards;
@@ -461,7 +459,7 @@ html  {
 .sidebar__link--drill:hover .sidebar__link--shard-7 {
   animation: shardfly7 1s forwards;
   animation-delay: 2s;
-  stroke-width: 0.3;
+  stroke-width: 0.1;
 }
 .sidebar__link--drill:hover .sidebar__link--drill-circle {
   animation: drill_hole 0s forwards;
@@ -485,12 +483,12 @@ html  {
 .sidebar__link--drill:hover .sidebar__link--shard-8 {
   animation: shardfly8 1s forwards;
   animation-delay: 1.8s;
-  stroke-width: 0.2;
+  stroke-width: 0.1;
 }
 .sidebar__link--drill:hover .sidebar__link--shard-9 {
   animation: shardfly9 1s forwards;
   animation-delay: 1.8s;
-  stroke-width: 0.2;
+  stroke-width: 0.1;
 }
 .sidebar__link--drill:hover .sidebar__link--shard-10 {
   animation: shardfly10 1s forwards;
@@ -505,7 +503,7 @@ html  {
 .sidebar__link--drill:hover .sidebar__link--shard-12 {
   animation: shardfly12 1s forwards;
   animation-delay: 1.6s;
-  stroke-width: 0.1;
+  stroke-width: 0.2;
 }
 .sidebar__link--drill:hover .sidebar__link--shard-13 {
   animation: shardfly13 1s forwards;
