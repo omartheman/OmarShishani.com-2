@@ -239,10 +239,11 @@ html  {
     0px 4px 0px 0px rgb(162, 0, 255), 
     0px 5px 0px 0px rgb(94, 71, 107),
     0px 7px 10px -2px;
+  color: rgb(75, 28, 85);
   display: inline-block;
   margin: 0 0.5em 0.5em;
   padding: 0.5em;
-  
+  text-decoration: none;
 }
 .navbar--contracting__button:hover {
   padding-top: 0.75rem;
@@ -406,6 +407,232 @@ html  {
 .sidebar__link--animations:hover .star-small-lower-right {
   animation: fade_flash var(--star-flash-duration) infinite;
   animation-delay: 0s;
+}
+.sidebar__link--drill-only {
+  right: 1.7em;
+}
+.sidebar__link--drill-only:hover {
+  animation: drill forwards 5s;
+  transform-origin: center;
+}
+.sidebar__link--drill {
+}
+.sidebar__link--drill-circle {
+  transform: none !important;
+}
+.sidebar__link--drill:hover {
+  animation: drill forwards 1s;
+  transform-origin: center;
+}
+.sidebar__link--drill:hover .sidebar__link--drill-piece {
+  animation: drill_translate forwards 2s;
+  animation-delay: 1s;
+  position: relative;
+  left: 200px;
+}
+.sidebar__link--drill:hover .sidebar__link--shard-1 {
+  animation: shardfly 1s forwards;
+  animation-delay: 1.4s;
+}
+.sidebar__link--drill:hover .sidebar__link--shard-2 {
+  animation: shardfly2 1s forwards;
+  animation-delay: 1.4s;
+  stroke-width: 0.3;
+}
+.sidebar__link--drill:hover .sidebar__link--shard-3 {
+  animation: shardfly3 1s forwards;
+  animation-delay: 1.4s;
+}
+.sidebar__link--drill:hover .sidebar__link--shard-4 {
+  animation: shardfly4 1s forwards;
+  animation-delay: 1.6s;
+  stroke-width: 0.1;
+}
+.sidebar__link--drill:hover .sidebar__link--shard-5 {
+  animation: shardfly5 1s forwards;
+  animation-delay: 1.4s;
+  stroke-width: 0.2;
+}
+.sidebar__link--drill:hover .sidebar__link--shard-6 {
+  animation: shardfly6 1s forwards;
+  animation-delay: 1.8s;
+  stroke-width: 0.2;
+}
+.sidebar__link--drill:hover .sidebar__link--shard-7 {
+  animation: shardfly7 1s forwards;
+  animation-delay: 2s;
+  stroke-width: 0.6;
+}
+.sidebar__link--drill:hover .sidebar__link--drill-circle {
+  animation: drill_hole 0s forwards;
+  animation-delay: 2s;
+}
+.sidebar__link--broken-circle {
+  stroke-width: 0;
+}
+.sidebar__link--drill:hover .sidebar__link--broken-circle {
+  animation: display_broken_circle 0s forwards;
+  animation-delay: 2s;
+} 
+.sidebar__link--drill:hover .sidebar__link--drill-button {
+  animation: drill_button 2.5s forwards, drill_button_2 2s forwards;
+  animation-delay: 0.6s;
+}
+.sidebar__link--drill:hover .sidebar__link--drill-bit {
+  animation: drill_bit forwards 2s;
+  animation-delay: 1s;
+}
+
+@keyframes drill_bit {
+  0% {
+    offset-path: path('M 0,0');
+  }
+  10% {
+    offset-path: path('M 0.75,-0.025');
+  }
+  15% {
+    offset-path: path('M 0.47,-0.16');
+  }
+  20% {
+    offset-path: path('M 1.44,-0.48');
+  }
+  30% {
+    offset-path: path('M 0.945,-0.315');
+  }
+  46% {
+    offset-path: path('M 1.5,-0.5');
+  }
+  48% {
+    offset-path: path('M 1.05,-0.35');
+  }
+  50% {
+    offset-path: path('M 1.5,-0.5');
+  }
+  55% {
+    offset-path: path('M 1.05,-0.35');
+  }
+  65% {
+    offset-path: path('M 3.05,-1');
+  }
+  80% {
+    offset-path: path('M 4,-1.4');
+  }
+  100% {
+    offset-path: path('M 0,0');
+  }
+}
+@keyframes drill_button {
+  0% {
+    offset-path: path('M 0,0');
+  }
+  10% {
+    offset-path: path('M -1, 0.35');
+  }
+  51% {
+    offset-path: path('M -100000, -100000');
+  }
+  89% {
+    offset-path: path('M -100000, -100000');
+  }
+  90% {
+    offset-path: path('M -1, 0.35');
+  }
+  100% {
+    offset-path: path('M 0,0');
+  }
+}
+@keyframes display_broken_circle {
+  from {
+    stroke-width: 0;
+  }
+  to {
+    stroke-width: 0.864;
+  }
+}
+@keyframes drill_hole {
+  from {
+  }
+  to {
+    stroke-width: 0;
+  }
+}
+@keyframes shardfly7 {
+  from {
+    offset-path: path('M 0,0');
+  }
+  to {
+    offset-path: path('M -10, 34');
+  }
+}
+@keyframes shardfly6 {
+  from {
+    offset-path: path('M 0,0');
+  }
+  to {
+    offset-path: path('M -28, 32');
+  }
+}
+@keyframes shardfly5 {
+  from {
+    offset-path: path('M 0,0');
+  }
+  to {
+    offset-path: path('M -14, -8');
+  }
+}
+@keyframes shardfly4 {
+  from {
+    offset-path: path('M 0,0');
+  }
+  to {
+    offset-path: path('M -3, -9');
+  }
+}
+@keyframes shardfly3 {
+  from {
+    offset-path: path('M 0,0');
+  }
+  to {
+    offset-path: path('M -3, -12');
+  }
+}
+@keyframes shardfly2 {
+  from {
+    offset-path: path('M 0,0');
+  }
+  to {
+    offset-path: path('M 3, 30');
+  }
+}
+@keyframes shardfly {
+  from {
+    offset-path: path('M 0,0');
+  }
+  to {
+    offset-path: path('M 6, 30');
+  }
+}
+@keyframes drill {
+  from {
+
+  }
+  to {
+   transform: rotate(45deg); 
+  }
+}
+@keyframes drill_translate {
+  0% {
+    offset-path: path('M 0,0');
+  }
+  50% {
+    offset-path: path('M 1.5,-0.5');
+  }
+  80% {
+    offset-path: path('M 4,-1.4');
+  }
+  100% {
+    offset-path: path('M 0,0');
+  }
 }
 .sidebar__link--home {
   display: block;
@@ -673,6 +900,10 @@ html  {
     width: 100%;
   }
   .main {
+    margin-left: 0;
+  }
+  .navbar--contracting {
+    width: 100%;
     margin-left: 0;
   }
   #navbar-hamburger {
