@@ -13,11 +13,10 @@
   --OS-logo-color: #4b4545;
   --profile-pic-padding: 1em;
   --profile-pic-width: 14em;
-  --sidebar-width: 10rem;
+  --sidebar-width: 11rem;
   --star-flash-duration: 0.7s;
   --vid-grd-col-gap: 1rem;
 }
-
 html  {
   scroll-behavior: smooth;
 }
@@ -127,7 +126,6 @@ html  {
   background-color: rgba(238, 183, 255, 0.8);
   float: right;
   margin-left: var(--sidebar-width);
-  margin-top: calc(var(--navbar_main_height) + var(--navbar_main_padding) * 2);
   width: calc(100% - var(--sidebar-width));
 }
 .header--homepage {
@@ -171,6 +169,9 @@ html  {
   overflow: auto;
 }
 .image--contracting {
+  border-radius: 10px;
+  display: block;
+  margin: auto;
   max-width: 100%;
   width: 500px;
 }
@@ -195,6 +196,9 @@ html  {
   /* $ På Brittany animation ger brittany h1 en margin på toppen av html dokumentet utan clear:both på main $ */
   margin-left: var(--sidebar-width);
   /* $ marginleft gör att main börjar bredvid sidebar $ */
+}
+.main--construction {
+  padding: 0 5rem;
 }
 #mobile-navigation-main-content {
 	display: none;
@@ -224,7 +228,7 @@ html  {
   background-color: hsla(285, 100%, 95%, 0.8);
   float: right;
   float: left;
-  font: 1.2rem source_sans_proregular, sans-serif;
+  font: 1.2em source_sans_proregular, sans-serif;
   font-weight: 800;
   height: 3.5em;
   margin-left: var(--sidebar-width);
@@ -246,11 +250,25 @@ html  {
   text-decoration: none;
 }
 .navbar--contracting__button:hover {
-  padding-top: 0.75rem;
+  height: 1.4em;
   box-shadow: 
     0px 2px 0px 0px rgb(162, 0, 255), 
     0px 5px 0px 0px rgb(94, 71, 107),
     0px 7px 10px -2px;
+}
+.navbar--contracting__button--back-to-top {
+  border-top: 2px solid rgb(115, 67, 155);
+  border-radius: 10px 10px 0 0;
+  box-shadow:
+    0px -4px 0px 0px rgb(162, 0, 255), 
+    0px -5px 0px 0px rgb(94, 71, 107),
+    0px -7px 10px -2px;
+  font: 1.2em source_sans_proregular, sans-serif;
+  font-weight: 800;
+  opacity: 0;
+  position: fixed;
+    bottom: 10px;
+    right: 30px; 
 }
 .navbar--main {
   align-items: center;
@@ -844,11 +862,8 @@ html  {
   }
 }
 @keyframes drill {
-  from {
-
-  }
   to {
-   transform: rotate(45deg); 
+   transform: rotate(25deg); 
   }
 }
 @keyframes drill_translate {
@@ -947,6 +962,9 @@ html  {
 
 
 @media (max-width: 1000px) {
+  .main--construction {
+    padding: 0 0;
+  }
   .text-main__grid--retaining-wall-merian {
     grid-template-areas: 
       "main    main    main"

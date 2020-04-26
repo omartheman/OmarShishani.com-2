@@ -11,25 +11,27 @@
 	<title>Omar Shishani</title>
 </head>
 	<body class="body">
-		<header class="header header--contracting">
+		<header id="page-top" class="header header--contracting">
 		<!-- $ Elementet <header> används för bättre semantik $ -->
 			<h1 class="header__heading">
 				Construction
 			</h1>
 		</header>
 		<nav class="navbar--contracting">
-			<a class="navbar--contracting__button" href="#my-projects">Scroll to My Projects</a>	
+			<a class="navbar--contracting__button navbar--contracting__button--my-projects" href="#my-projects">Scroll to My Projects</a>	
+			<a class="navbar--contracting__button navbar--contracting__button--retaining-wall" href="#retaining-wall">Retaining Wall</a>	
+			<a class="navbar--contracting__button navbar--contracting__button--paver-patio" href="#pavers">Paver Patio</a>	
+			<a class="navbar--contracting__button navbar--contracting__button--backyard-lighting" href="#backyard-lighting">Backyard Lighting</a>	
 		</nav>
 
-		<main class="main">
-
+		<main class="main main--construction">
 			<div class="text-main">
 				<h2 class="text-main__title">
 					About Me as a Builder
 				</h2>
         <div class="text-main__content">
 					<p>
-						I enjoy doing hands-on work, and I am always looking for ways to learn or improve. I pay close attention to details, and I am committed to creating a high-quality project. I accept mistakes when I make them, and stand for the cost of repairing them,
+						I enjoy doing hands-on work, and I am always looking for ways to learn or improve. I pay close attention to details, and I am committed to creating a high-quality project. I accept mistakes when I make them, and stand for the cost of making it right. I would love to get in contact and talk about your project idea. 
 					</p>
 					<p>
 						Call, text, or email me for an estimate, sketches, or to talk about your project.
@@ -71,8 +73,8 @@
         </div>
 			</div>
 		
-      <div class="text-main text-main--full-width">
-				<h2  id="my-projects" class="text-main__title">
+      <div id="my-projects" class="text-main text-main--full-width">
+				<h2 id="retaining-wall" class="text-main__title">
 					Retaining Wall - Pleasant Hill, California
 				</h2>
 
@@ -89,7 +91,23 @@
 			</div>
 			
 			<div class="text-main text-main--full-width">
-				<h2 class="text-main__title">
+				<h2 id="backyard-lighting" class="text-main__title">
+					Backyard Lighting - Danville, California
+				</h2>
+        <div class="text-main__content">
+					<div class="text-main__description">
+						Designed and executed in 2020. Light placement chosen to distribute electrical load evenly. Lights wired together in such a way as to eliminate need for electrical hubs to split wires in main backyard lounging areas. 
+					</div>
+					<div class="text-main__grid--pavers-merian">
+						<img class="image--contracting text-main__grid-item-1" src="pictures/lights-3.jpg" alt="Lights view from level ground">
+						<img class="image--contracting text-main__grid-item-2" src="pictures/lights-2.jpg" alt="Lights on lemon bush">
+						<img class="image--contracting text-main__grid-item-3" src="pictures/lights-1.jpg" alt="Lights view from 2nd floor">
+					</div>
+        </div>
+			</div>
+
+			<div class="text-main text-main--full-width">
+				<h2 id="pavers" class="text-main__title">
 					Paver Patio - Pleasant Hill, California
 				</h2>
         <div class="text-main__content">
@@ -97,12 +115,18 @@
 						Designed and built in 2017. Patten design chosen to create a complex look that maintains order.
 					</div>
 					<div class="text-main__grid--pavers-merian">
-						<img class="image--contracting text-main__grid-item-1" src="pictures/merian-pavers-1.jpg" alt="Retaining wall with brick pattern">
-						<img class="image--contracting text-main__grid-item-2" src="pictures/merian-pavers-2.jpg" alt="Close-up of retaining wall with brick pattern">
-						<img class="image--contracting text-main__grid-item-3" src="pictures/merian-pavers-3.jpg" alt="Picture of length of retaining wall with brick pattern">
+						<img class="image--contracting text-main__grid-item-1" src="pictures/merian-pavers-1.jpg" alt="Paver patio angle 1">
+						<img class="image--contracting text-main__grid-item-2" src="pictures/merian-pavers-2.jpg" alt="Paver close-up">
+						<img class="image--contracting text-main__grid-item-3" src="pictures/merian-pavers-3.jpg" alt="Paver patio angle 2">
 					</div>
         </div>
 			</div>
+
+			<a href="#page-top">
+				<div class="navbar--contracting__button navbar--contracting__button--back-to-top">
+					Back to top
+				</div>
+			</a>
 
 			<video autoplay muted loop class="myVideo">
 				<source src="beach-walk-in-v4.mp4" type="video/mp4">
@@ -110,5 +134,6 @@
 		</main>
 		<script src="insert-to-dom.js"></script>
 		<script id="omarJavascript" src="omar-shishani-2.js"></script>
+		<script src="construction-top-button.js"></script>
 	</body>
 </html>

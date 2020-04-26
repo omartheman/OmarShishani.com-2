@@ -114,15 +114,7 @@ document.querySelector('main').insertAdjacentHTML('afterend', footer);
 const main = document.querySelector('main');
 main.insertAdjacentHTML('beforeend', mobileNav);
 
-const nav = String.raw`
-<nav class="navbar--main">
-  <div class="navbar--main__button">
-    <a href="contracting.html">
-      Contracting
-    </a>
-  </div>
-</nav>
-`;
-const body = document.querySelector('body'); 
-body.insertAdjacentHTML('afterbegin', nav);
 
+const button_scroll_down = document.querySelector(".button--scroll-down");
+let scroll_opa_default = 1;
+let prevScrollpos = window.pageYOffset;
