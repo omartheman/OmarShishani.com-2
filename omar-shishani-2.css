@@ -61,6 +61,9 @@ html  {
   /* $ Denna font-family används under class "body" som en default-backup font familj. $ */
   margin: 0;
 }
+.body--construction {
+  background-color: rgb(97, 141, 167);
+}
 .button--scroll-down {
   clear: both;
   display: block;
