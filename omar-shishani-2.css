@@ -112,20 +112,31 @@ html  {
   background-color:rgba(238, 183, 255, 0.8);
   display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-around;
   font-family: source_sans_probold;
   height: var(--footer-height);
+  padding: 1em;
   margin-left: var(--sidebar-width);
   width: calc(100% - var(--sidebar-width));
   bottom: 0;
 }
+.footer--wrap {
+  background-color:rgba(238, 183, 255, 0.8);
+  clear: both;
+}
 .footer__link-1 {
   border: 2px solid black;
   border-radius: 5px;
+  box-shadow: 0 0 8px .07px black;
   color: black;
-  margin: 1em;
   padding: 3px;
   text-decoration: none;
+}
+.footer__updated {
+  background-color:rgba(238, 183, 255, 0.8);
+  clear: both;
+  width: 100%;
 }
 .header {
   background-color: rgba(238, 183, 255, 0.8);
@@ -327,7 +338,7 @@ html  {
 /* $ Kod för hamburger gömmer dropdown-menyn  när skärmen är under en viss storlek $ */
   border: 0.1em solid black;
   border-radius: 10px;
-  box-shadow: 0px 0px 6px 0.1px black;
+  box-shadow: 0px 0px 5px 0.08px black;
   height: 0px;
     width: 0px;
   position: absolute;
@@ -382,6 +393,12 @@ html  {
   height: 5.5em;
   margin: 1rem auto 0;
   width: 8em;
+}
+.os-v2-svg--mobile-nav {
+  display: inline-block;
+  height: 2.75em;
+  margin: 0;
+  width: 4em;
 }
 .os-v2-container {
   text-align: center; 
