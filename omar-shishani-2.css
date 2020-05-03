@@ -237,9 +237,11 @@ html  {
   padding: 0.5em;
   font-size: 1.3rem;
 }
+.mobile-nav__anchor {
+  display: none;
+}
 .mobile-nav__construction-anchor {
   align-items: center;
-  display: flex;
   padding: 0.2em !important; 
 }
 .mobile-nav__construction-span {
@@ -325,6 +327,7 @@ html  {
 /* $ Kod för hamburger gömmer dropdown-menyn  när skärmen är under en viss storlek $ */
   border: 0.1em solid black;
   border-radius: 10px;
+  box-shadow: 0px 0px 6px 0.1px black;
   height: 0px;
     width: 0px;
   position: absolute;
