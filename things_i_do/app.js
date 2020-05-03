@@ -4,16 +4,25 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 
-// ********* Following block added from Atlas
-const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://omarnaod:3yeDroplets@cluster0-zzysp.mongodb.net/test?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-client.connect(err => {
+// ********* Following block added from Atlas. This was working.
+// const MongoClient = require('mongodb').MongoClient;
+// const uri = "mongodb+srv://omarnaod:3yeDroplets@cluster0-zzysp.mongodb.net/test?retryWrites=true&w=majority";
+// const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+// client.connect(err => {
+//   const collection = client.db("test").collection("devices");
+//   // perform actions on the collection object
+//   client.close();
+// });
+// *********************************************
+// Following is from girl from Atlas support
+var MongoClient = require('mongodb').MongoClient;
+var uri = "mongodb://omarnaod:3yeDroplets@cluster0-shard-00-00-zzysp.mongodb.net:27017,cluster0-shard-00-01-zzysp.mongodb.net:27017,cluster0-shard-00-02-zzysp.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority";
+MongoClient.connect(uri, function(err, client) {
   const collection = client.db("test").collection("devices");
   // perform actions on the collection object
   client.close();
 });
-// *********************************************
+//************************** */
 
 // app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '../..'));

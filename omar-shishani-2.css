@@ -218,6 +218,18 @@ html  {
   padding: 0.5em;
   font-size: 1.3rem;
 }
+.mobile-nav__construction-anchor {
+  align-items: center;
+  display: flex;
+  padding: 0.2em !important; 
+}
+.mobile-nav__construction-span {
+  position: absolute;
+}
+.mobile-nav__construction-drill {
+  position: absolute;
+  left: 0;
+}
 .myVideo {
   position: fixed;
   left: 0;
@@ -327,7 +339,7 @@ html  {
   width: 100%;
   z-index: 101;
 }
-#navbar-mobile {
+.navbar-mobile {
   position: absolute;
     left: -10000px;
   width: 0px;
@@ -378,6 +390,10 @@ html  {
   background-color: lightgrey;
   height: 100vh;
   position: fixed;
+  
+  overflow-y: scroll;
+  top: 0;
+  bottom: 0;
   width: var(--sidebar-width);
 }
 .sidebar__button {
