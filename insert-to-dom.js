@@ -72,7 +72,7 @@ const sidebar = String.raw`
 </aside>
 `;
 const footer = String.raw`
-<footer class="footer--wrap no-print">
+<footer class="no-print">
   <div class="footer"> 
     <span><a class="footer__link-1" href="https://www.linkedin.com/in/omar-shishani-school/" target="_blank">LinkedIn</a></span>
     <span><a class="footer__link-1" href="https://www.instructables.com/member/omarshishanischool/" target="_blank">Instructables</a></span>
