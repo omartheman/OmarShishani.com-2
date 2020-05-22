@@ -108,6 +108,9 @@ html  {
     top:0;
     left: 0;
 }
+.festivals__img {
+  width: 500px; 
+}
 .footer {
   background-color:rgba(238, 183, 255, 0.8);
   display: flex;
@@ -1058,7 +1061,7 @@ html  {
   .header__heading--subheading-my-projects {
     border-radius: 0;
   }
-  .main--construction {
+  .main__section-construction-padded {
     padding: 0 0;
   }
   .text-main__grid--style-1 {

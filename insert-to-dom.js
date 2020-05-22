@@ -79,6 +79,8 @@ const footer = String.raw`
     <span><a class="footer__link-1" href="https://github.com/crazy-hobo" target="_blank">Github</a></span>
   </div>
 </footer>
+<div class="footer__updated"><a href="games/pac-man.html">Game</a></div>
+<div class="footer__updated"><a href="blog.html">Blog</a></div>
 <div class="footer__updated">Last Updated April 2020</div>
 `;
 

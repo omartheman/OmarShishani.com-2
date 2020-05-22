@@ -1,0 +1,14 @@
+.block-1 {
+  background-color: red;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}
+.block-2 {
+  background-color: tan;
+  height: 50px;
+  position: absolute;
+    bottom: 200px;
+    left: 200px; 
+  width: 50px;
+}
