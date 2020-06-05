@@ -323,21 +323,9 @@ html  {
   display: none;
   margin-top: 0;
 }
-  .navbar--about-me__button--pages-to-guide:hover .navbar__btn--submenu  {
-    display: block;
-  }
 .navbar__btn--submenu--lvl-2 {
   display: block;
   margin-top: 0;
-}
-  .navbarabout-me__button--pages-to-guide:hover .navbar__btn--submenu--lvl-2 {
-    display: block;
-  }
-.navbar__btn--present:hover .navbar__btn--lvl-3 {
-  display: block;
-}
-.navbar__btn--present:hover {
-background-color:red;
 }
 .navbar--about-me__button--pages-to-guide {
   display: inline-block;
@@ -347,6 +335,18 @@ background-color:red;
   border-radius: 0;
   box-shadow: none;
 }
+.drop-2 {
+  display:none;
+}
+  .drop-1:hover .drop-2 {
+    display: block;
+  }
+.drop-3 {
+  display: none;
+}
+  .drop-2:hover .drop-3 {
+    display: block;
+  }
 .navbar--contracting {
   background-color: hsla(285, 100%, 95%, 0.8);
   float: right;
