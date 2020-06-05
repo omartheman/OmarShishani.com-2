@@ -1014,6 +1014,18 @@ html  {
 .text-main--2 {
   margin: 5rem 1rem 1rem 0.5rem;
 }
+.text-main--landing {
+  width: calc(33% - 1.5rem);
+}
+.text-main--landing:hover {
+  transform: scale(1.02);
+}
+.text-main--landing:hover .text-main__content {
+  background-color: rgba(220, 107, 255, 0.972);
+}
+.text-main--landing__image {
+  width: 100%;
+}
 .text-main--clear {
   clear: left;
 }
