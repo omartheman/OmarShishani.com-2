@@ -305,19 +305,13 @@ html  {
 }
 .navbar__btn--lvl-2 {
   border-radius: 0;
-  display: inline-block;
+  display: block;
   margin: 0;
 }
 .navbar__btn--lvl-3 {
   border-radius: 0;
   display: inline-block;
   margin: 0;
-}
-.navbar__btn--lvl-2:first-of-type {
-  border-radius: 10px 0 0 10px;
-}
-.navbar__btn--lvl-2:last-of-type {
-  border-radius: 0 10px 10px 0;
 }
 .navbar__btn--submenu {
   display: none;
