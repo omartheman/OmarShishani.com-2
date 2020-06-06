@@ -303,10 +303,11 @@ html  {
   padding: 0.5em;
   text-decoration: none;
 }
-.navbar__btn--lvl-2 {
+.nav__btn--lvl-2 {
   border-radius: 0;
   display: block;
   margin: 0;
+  width: 6em;
 }
 .navbar__btn--lvl-3 {
   border-radius: 0;
@@ -314,8 +315,9 @@ html  {
   margin: 0;
 }
 .navbar__btn--submenu {
-  display: none;
-  margin-top: 0;
+  border-radius: 0;
+  display: block;
+  margin: 0;
 }
 .navbar__btn--submenu--lvl-2 {
   display: block;
@@ -331,17 +333,29 @@ html  {
 }
 .drop-2 {
   display:none;
+  list-style-type: none;
 }
-  .drop-1:hover .drop-2 {
+  .drop-1:hover > .drop-2 {
     display: block;
   }
 .drop-3 {
   display: none;
+  list-style-type: none;
 }
-  .drop-2:hover .drop-3 {
+  .drop-2:hover > .drop-3 {
     display: block;
   }
 .navbar--contracting {
+  background-color: hsla(285, 100%, 95%, 0.8);
+  float: right;
+  float: left;
+  font: 1.2em source_sans_proregular, sans-serif;
+  font-weight: 800;
+  padding-bottom: 0.3em;
+  margin-left: var(--sidebar-width);
+  width: calc(100% - var(--sidebar-width));
+}
+.navbar--about-me {
   background-color: hsla(285, 100%, 95%, 0.8);
   float: right;
   float: left;
