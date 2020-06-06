@@ -186,12 +186,6 @@ html  {
     /* $ Väljer Century Gothic som backup, för att den är lik Comfortaa $ */
     width: calc(100% - var(--profile-pic-width)/2 - var(--profile-pic-padding)*2);
 }
-.header__heading--about-me {
-  background-color: red;
-  display: inline-block;
-  margin: auto;
-  width: auto;
-}
 .header__heading--subheading-my-projects {
   background-color: rgb(236, 236, 236);
   margin: 4em 0 0;
@@ -309,21 +303,6 @@ html  {
   padding: 0.5em;
   text-decoration: none;
 }
-.navbar__btn--about-me {
-  background-color: rgb(222, 207, 255);
-  border: 2px solid rgb(115, 67, 155);
-  border-bottom: 1px solid rgb(115, 67, 155);
-  border-radius: 0 0 10px 10px;
-  box-shadow: 
-    0px 4px 0px 0px rgb(162, 0, 255), 
-    0px 5px 0px 0px rgb(94, 71, 107),
-    0px 7px 10px -2px;
-  color: rgb(75, 28, 85);
-  display: inline-block;
-  margin: 0 0.5em;
-  padding: 0.5em;
-  text-decoration: none;
-}
 .nav__btn--lvl-2 {
   border-radius: 0;
   display: block;
@@ -384,6 +363,8 @@ html  {
   font: 1.2em source_sans_proregular, sans-serif;
   font-weight: 800;
   padding-bottom: 0.3em;
+  margin-left: var(--sidebar-width);
+  width: calc(100% - var(--sidebar-width));
 }
 .navbar--contracting__button {
   background-color: rgb(222, 207, 255);
